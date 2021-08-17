@@ -20,4 +20,56 @@
 }
 .hero__btn {
   padding: 1rem 1.5rem;
+  box-shadow: 0 1rem 2.5rem -1.1rem var(--color-dark);
 }
+.hero__btn:hover { 
+  box-shadow: none;
+}
+/* ========== Offers of products ========== */
+.offer {
+  padding: 0 0 0 .5rem;
+  box-shadow: 0px 8px 32px rgba(17, 6, 4, 0.08);
+}
+.offer__content {
+  display: flex;
+}
+.offer__data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.offer__description,
+.offer__product {
+  margin: .5rem 0;
+}
+.offer__product {
+  font-size: var(--subtitle);
+}
+.offer__quantity,
+.offer__price {
+  margin-top: .5rem;
+}
+.offer__btn,
+.offer__description {
+  font-size: var(--small-text);
+}
+.offer__btn {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1rem 2rem -.5rem var(--color-primary);
+ }
+ .offer__btn:hover {
+   box-shadow: none;
+ }
+ .offer__icon {
+  margin-left: .2rem;
+  transition: 0.2s ease;
+ }
+ .offer__btn:hover .offer__icon {
+  transform: translateX(.5rem)
+ }
+ /* ========== Our services ========== */
+ .service {
+  
+ }

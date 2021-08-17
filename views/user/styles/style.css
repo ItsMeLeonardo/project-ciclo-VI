@@ -7,6 +7,8 @@
 }
 .subtitle {
   font-size: var(--small-title);
+  text-align: center;
+  font-weight: 500;
 }
 .container {
   max-width: 100vw;
@@ -14,16 +16,6 @@
 }
 .grid {
   display: grid;
-}
-.header {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
-  background: var(--color-primary);
-  border-radius: 8px 8px 0px 0px;
-  box-shadow: var(--shadow-top);
 }
 /* ========== Components generals ========== */
 /* search input */
@@ -64,7 +56,8 @@
 .btn {
   border-radius: 4px;
   padding: .75rem .5rem;
-  color: var(--color-light)
+  color: var(--color-light);
+  transition: .5s ease-in-out;
 }
 .btn-white {
   background: var(--color-light);
@@ -86,6 +79,16 @@
 }
 
 /* ========== Navbar ========== */
+.header {
+  width: 100%;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: var(--color-primary);
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: var(--shadow-top);
+}
 .nav {
   max-height: 220px;
   height: 60px;
