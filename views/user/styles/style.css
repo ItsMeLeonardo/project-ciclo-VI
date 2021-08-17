@@ -1,0 +1,143 @@
+:root{
+  --shadow-top: 0px -7px 31px rgba(0, 0, 0, 0.07), 0px -2.92443px 12.9511px rgba(0, 0, 0, 0.0488234), 0px -1.56354px 6.92426px rgba(0, 0, 0, 0.0407766), 0px -0.876509px 3.88168px rgba(0, 0, 0, 0.0350543), 0px -0.465507px 2.06153px rgba(0, 0, 0, 0.029343), 0px -0.193708px 0.85785px rgba(0, 0, 0, 0.0213282);
+}
+/* ========== styles for all view user ========== */
+.section {
+  padding: 1rem;
+}
+.subtitle {
+  font-size: var(--small-title);
+}
+.container {
+  max-width: 100vw;
+  padding: 1rem;
+}
+.grid {
+  display: grid;
+}
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: var(--color-primary);
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: var(--shadow-top);
+}
+/* ========== Components generals ========== */
+/* search input */
+.search {
+  width: 100%;
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--description);
+  background: var(--color-light);
+  padding: .5rem 0 .5rem .5rem;
+  border-radius: 4px;
+  color: var(--color-primary);
+}
+::placeholder {
+  opacity: .8;
+  color: var(--color-dark);
+}
+.search__label {
+  position: absolute;
+  color: var(--color-primary-0-5);
+  top: .5rem;
+  left: .5rem;
+}
+.search__icon {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  color: var(--color-primary-0-5);
+}
+.search__input:focus + .search__icon {
+  color: var(--color-primary)
+}
+/* --- buttons --- */
+.btn {
+  border-radius: 4px;
+  padding: .75rem .5rem;
+  color: var(--color-light)
+}
+.btn-white {
+  background: var(--color-light);
+  color: var(--color-primary) !important;
+}
+.btn-white-outline {
+  background: transparent;
+  color: var(--color-light);
+  border: 2px solid var(--color-light);
+}
+.btn-gradient {
+  background: var(--main-gradient);
+}
+
+/* ========== Navbar ========== */
+.nav {
+  max-height: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__toggle,
+.nav__link {
+  color: var(--color-light);
+}
+.nav__close,
+.nav__toggle,
+.nav__logo {
+  font-size: 2rem;
+}
+.nav__toggle {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    cursor: pointer;
+    bottom: -100%;
+    left: 0; 
+    width: 100%;
+    transition: .4s;
+    background: var(--color-primary);
+    border-radius: 8px 8px 0 0;
+    box-shadow: var(--shadow-top);
+  }
+}
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 1rem;
+  gap: .5rem;
+}
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav__item:nth-child(4) { 
+  grid-column: span 3;
+}
+.nav__item:last-child { 
+  grid-column: 3/4;
+}
+.nav__close {
+  position: absolute;
+  bottom: 2rem;
+  left: 45%;
+  color: white;
+}
+.nav__visible {
+  bottom: 0;
+}
+/* ========== Form inputs ========== */
+
+/* ========== receipts ========== */
