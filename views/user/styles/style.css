@@ -1,9 +1,11 @@
 :root{
   --shadow-top: 0px -7px 31px rgba(0, 0, 0, 0.07), 0px -2.92443px 12.9511px rgba(0, 0, 0, 0.0488234), 0px -1.56354px 6.92426px rgba(0, 0, 0, 0.0407766), 0px -0.876509px 3.88168px rgba(0, 0, 0, 0.0350543), 0px -0.465507px 2.06153px rgba(0, 0, 0, 0.029343), 0px -0.193708px 0.85785px rgba(0, 0, 0, 0.0213282);
+  --shadow-bottom-orange: 0 1rem 2rem -.5rem var(--color-primary);
 }
 /* ========== styles for all view user ========== */
 .section {
   padding: 1rem;
+  width: 100vw;
 }
 .subtitle {
   font-size: var(--small-title);
@@ -58,6 +60,9 @@
   padding: .75rem .5rem;
   color: var(--color-light);
   transition: .5s ease-in-out;
+}
+.btn:hover {
+  box-shadow: none;
 }
 .btn-white {
   background: var(--color-light);
