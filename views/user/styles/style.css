@@ -75,6 +75,12 @@
   color: var(--color-light);
   border: 2px solid var(--color-light);
 }
+.btn-primary {
+ background: var(--color-primary); 
+}
+.btn-secondary {
+  background: var(--color-secondary);
+}
 .btn-gradient {
   background: var(--main-gradient);
 }

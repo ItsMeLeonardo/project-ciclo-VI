@@ -1,0 +1,23 @@
+/* ========== Hero ========== */
+.hero {
+  background: var(--main-gradient);
+}
+.hero__logo {
+  font-size: 7.5rem;
+}
+.hero__about {
+  font-size: var(--small-text);
+  color: var(--color-light);
+}
+.hero__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+}
+.hero__img {
+ 
+}
+.hero__btn {
+  padding: 1rem 1.5rem;
+}

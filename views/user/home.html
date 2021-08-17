@@ -12,7 +12,7 @@
   <!-- ========== styles for view user ========== -->
   <link rel="stylesheet" href="styles/style.css">
   <!-- ========== styles only this page ========== -->
-  
+  <link rel="stylesheet" href="styles/home.css">
   <title>Principal</title>
 </head>
 <body>
@@ -56,28 +56,47 @@
       </div> 
     </nav>    
   </header>
-  <!-- ========== hero ========== -->
-  <main class="main section">
-    <section class="hero">
-      <div class="hero__logo logo logo-white">Isis</div>
+  <main class="main">
+    <!-- ========== hero ========== -->
+    <section class="hero section">
+      <div class="hero__logo logo logo--white">Isis</div>
       <div class="hero__about">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium reprehenderit, qui veniam, repellat consectetur ut quod nemo quasi facilis maiores vel eum mollitia porro excepturi aperiam magni libero? Nihil, atque.</p>
       </div>
       <div class="hero__content">
-        <div class="hero__img"></div>
-        <a class="hero__btn btn btn-gradient">Ver productos</a>
+        <div class="hero__img">
+          <img src="assets/img/mask-woman.png" alt="woman mask">
+        </div>
+        <a class="hero__btn btn btn-secondary">Ver productos</a>
       </div>
     </section>
-  </main>
-  <!-- ========== recent products ========== -->
   
-  <!-- ========== our services ========== -->
-  
-  <!-- ========== cards accepted ========== -->
-  
-  <!-- ========== btn register ========== -->
+    <!-- ========== recent products ========== -->
+    <section class="offer section">
+      <div class="offer__content">
+        <!-- data -->
+        <div class="offer__data">
+          <h2 class="offer__product">Name</h2>
+          <p class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, qui.</p>
+          <span class="offer__quantity"></span>
+          <span class="offer__price"></span>
+          <a href="#" class="offer__btn btn btn-primary">Agregar a carro</a>
+        </div>
+        <!-- image -->
+        <div class="offer__img">
+          <img src="#" alt="img">
+          <span class="offer__tag"></span>
+        </div>
+      </div>
+    </section>
+    <!-- ========== our services ========== -->
+    
+    <!-- ========== cards accepted ========== -->
+    
+    <!-- ========== btn register ========== -->
 
-  <!-- ========== Import scripts for animations ========== -->
+    <!-- ========== Import scripts for animations ========== -->
+</main>
   <script src="js/animations.js"></script>
 </body>
 </html>
