@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: .6rem;
 }
 .offer__description,
 .offer__product {
@@ -93,6 +94,11 @@
  }
  .service__content {
    margin-top: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-flow: wrap;
+   gap: 3rem;
  }
  .service__item {
    margin-top: 2rem;
@@ -102,6 +108,8 @@
   font-size: var(--subtitle);
   font-weight: 500;
  }
+ .service__delivery {transform: translateX(2rem)}
+ .service__chat {transform: translateX(1rem)}
 /* ========== Cards accepted ========== */
 .cards__content {
   margin-top: 1.5rem;
@@ -111,6 +119,7 @@
 .cards__svg {
   text-align: center;
   filter: drop-shadow(0px 186px 331px rgba(17, 17, 18, 0.06)) drop-shadow(0px 77.7064px 138.284px rgba(17, 17, 18, 0.0467659)) drop-shadow(0px 41.5455px 73.9332px rgba(17, 17, 18, 0.0435319)) drop-shadow(0px 23.2901px 41.4463px rgba(17, 17, 18, 0.0410297)) drop-shadow(0px 12.3692px 22.0118px rgba(17, 17, 18, 0.0369266)) drop-shadow(0px 5.1471px 9.15962px rgba(17, 17, 18, 0.0281537));
+  transition: .4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .cards__svg:hover {
   filter: drop-shadow(0 0 0 transparent);
@@ -121,11 +130,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .4s ease-in-out;
 }
 .register-btn .btn {
  padding: 1.5rem 3rem; 
+ margin-bottom: 60px;
  box-shadow: var(--shadow-bottom-orange);
 }
 .register-btn:hover .btn {
   box-shadow: none;
+}
+/* ========== Media query ========== */
+@media screen and (min-width: 768px) {
+  /* --- hero --- */
+  .hero {
+    margin-top: 60px;
+  }
 }

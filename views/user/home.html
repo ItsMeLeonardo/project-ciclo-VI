@@ -26,28 +26,44 @@
         <ul class="nav__list grid">
           <!-- items nav -->
           <li class="nav__item">
-            <a href="#" class="nav__link"><i class="isax isax-home"></i>Principal</a>
+            <a href="#" class="nav__link"><i class="isax isax-home nav__icon"></i>Principal</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">
-              <i class="isax isax-shop"></i>Productos</a>
+              <i class="isax isax-shop nav__icon"></i>Productos</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link"><i class="isax isax-bag"></i>Mi bolsa</a>
+            <a href="#" class="nav__link nav__bag">
+              Mi bolsa
+              <div class="nav__bag-content">
+                <i class="isax isax-bag"></i>
+                <!-- Items of shopping cart -->
+                <span class="nav__bag-item">1</span>
+              </div>
+            </a>
           </li>
-          <li class="nav__item">
+          <!-- searching -->
+          <li class="nav__item nav__search">
             <div class="search">
               <!-- <label class="search__label" for="search">Buscar</label> -->
               <input type="text" name="search" id="search" class="search__input" placeholder="Buscar">
               <i class="isax isax-search-favorite search__icon"></i>
             </div>
           </li>
+          <!-- ======== first view of users buttons of login ======== -->
           <li class="nav__item">
             <a href="#" class="nav__link btn btn-white">Registro</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link btn btn-white-outline">Iniciar</a>
           </li>
+          <!-- ======== this view,when the user starts a session ======== -->
+          <!-- <li class="nav__item">
+            <a href="#" class="nav__link btn btn-white">
+              <i class="isax isax-profile-circle nav__profile-icon"></i>
+              Mi Perfil
+            </a>
+          </li> -->
         </ul>
         <i class="isax isax-close-circle nav__close" id="nav__close"></i>
       </div>
@@ -67,7 +83,8 @@
       </div>
       <div class="hero__content">
         <div class="hero__img">
-          <img src="assets/img/mbl-hero-img-1.webp" alt="woman mask">
+          <img src="assets/img/mbl-hero-img-1.webp" alt="woman mask"> 
+          <img src="assets/img/" alt="" class="hero__img-desktop">
         </div>
         <a class="hero__btn btn btn-secondary">Ver productos</a>
       </div>
@@ -133,15 +150,15 @@
       <h2 class="subtitle">Nuestro servicios</h2>
       <div class="service__content">
         <div class="service__item">
-          <img class="service__img" src="assets/img/mbl-service-1.webp" alt="Servicio de delivery">
+          <img class="service__img service__delivery" src="assets/img/mbl-service-1.webp" alt="Servicio de delivery">
           <div class="service__name">Delivery</div>
         </div>
         <div class="service__item">
-          <img class="service__img" src="assets/img/mbl-service-2.webp" alt="Producto medicos">
+          <img class="service__img service__medicine" src="assets/img/mbl-service-2.webp" alt="Producto medicos">
           <div class="service__name">Medicina</div>
         </div>
         <div class="service__item">
-          <img class="service__img" src="assets/img/mbl-service-3.webp" alt="Soporte al cliente">
+          <img class="service__img service__chat" src="assets/img/mbl-service-3.webp" alt="Soporte al cliente">
           <div class="service__name">Chat 24/7</div>
         </div>
       </div>
