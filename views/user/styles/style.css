@@ -61,9 +61,16 @@
   color: var(--color-light);
   transition: .5s ease-in-out;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 .btn:hover {
   box-shadow: none;
+}
+.btn-icon {
+  font-size: 2rem;
+  color: var(--color-light);
 }
 .btn-white {
   background: var(--color-light);
@@ -114,6 +121,95 @@
 .nav__toggle {
   cursor: pointer;
 }
+/* ========== Chat ========== */
+.btn__show-chat {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-bottom-orange);
+}
+.btn__show-chat:hover {
+  transform: translateY(-.25rem)
+}
+.chat {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-light-0-7);
+  box-shadow: 4px 8px 16px rgba(17, 6, 4, 0.16);
+  backdrop-filter: blur(16px); 
+  top: 0;
+  left:0; 
+  z-index: -1;
+  opacity: 0;
+}
+.chat__visible {
+  position: fixed;
+  opacity: 1;
+  z-index: 10;
+}
+.chat__header {
+  height:48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-primary);
+  padding: 0 .25rem;
+  color:  white;
+}
+.chat__title {
+  font-size: var(--normal-size);
+  font-weight: 700;
+}
+.chat__body {
+  width: 100%;
+  height: 80%;
+}
+.chat__messages{
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.chat__message {
+  padding: .65rem 1rem;
+  margin: .75rem 0;
+  border: 1px solid var(--color-primary);
+  font-size: var(--chat-text);
+}
+.chat__message--response {
+  border-radius: 0 1.5rem 1.5rem 1.5rem;
+}
+.chat__message--request {
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+  text-align: end;
+}
+.chat__footer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5rem;
+  bottom: 3%;
+}
+.chat__writer {
+  height: 90%;
+  background: var(--color-primary-0-5);
+  border-radius: 4px;
+  padding-left: .5rem;
+  color: var(--color-primary)
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -201,6 +297,8 @@
   display: none;
 
 }
+/* ========== Chat ========== */
+
 /* ========== Form inputs ========== */
 
 /* ========== receipts ========== */

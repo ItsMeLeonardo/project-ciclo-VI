@@ -24,3 +24,15 @@ let offerSwiper = new Swiper(".offer", {
     clickable: true,
   },
 });
+/* ========== Chat show ========== */
+const chatShow = document.querySelector("#chat__show"),
+  chatClose = document.querySelector("#chat__close"),
+  chat = document.querySelector("#chat");
+if (chatShow && chatClose) {
+  chatShow.addEventListener("click", () => {
+    chat.classList.toggle("chat__visible");
+  });
+  chatClose.addEventListener("click", () => {
+    chat.classList.remove("chat__visible");
+  });
+}
