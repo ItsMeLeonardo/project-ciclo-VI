@@ -1,6 +1,7 @@
 /* ========== Hero ========== */
 .hero {
   background: var(--main-gradient);
+  max-height: 500px;
 }
 .hero__logo {
   font-size: 7.5rem;
@@ -15,8 +16,9 @@
   align-items: center;
   margin-top: 3rem;
 }
-.hero__img {
- 
+.hero__img img:nth-child(2),
+.hero__img img:nth-child(3) {
+ display: none;
 }
 .hero__btn {
   padding: 1rem 1.5rem;
@@ -145,5 +147,63 @@
   /* --- hero --- */
   .hero {
     margin-top: 60px;
+    display: flex;
+  }
+  .hero__info {
+    max-width: 50%;
+    padding-right: 2rem;
+  }
+  .hero__about {
+    font-size: var(--description);
+    line-height: 1.5rem;
+    margin: 2rem 0;
+  }
+  .hero__img { 
+    position: relative;
+  }
+  .hero__img img:nth-child(1) {
+    display: none;
+  }
+  .hero__img img:nth-child(2),
+  .hero__img img:nth-child(3) {
+    display: initial;
+    position: relative;
+  }
+  .hero__img img:nth-child(3) {
+    position: absolute;
+    transform: translateX(2rem);
+  }
+  .hero__btn {position: relative;}
+  /* --- offers --- */
+  .offer__content {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* --- offers --- */
+  .offer__data {
+    padding-top: 1rem;
+  }
+  .offer__product {
+    font-size: var(--small-title);
+  }
+  .offer__description {
+    font-size: var(--description);
+  }
+  .offer__quantity,
+  .offer__price,
+  .offer__btn {
+    font-size: var(--normal-size);
+  }
+  .offer__btn {
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* --- hero --- */
+  .hero__about {
+    font-size: var(--normal-size);
+    line-height: 1.5rem;
+    margin: 4rem 2rem 4rem 0;
   }
 }
