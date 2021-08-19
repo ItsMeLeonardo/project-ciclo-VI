@@ -35,4 +35,19 @@ if (chatShow && chatClose) {
   chatClose.addEventListener("click", () => {
     chat.classList.remove("chat__visible");
   });
+
+  // writer in chat
+  const chatWriter = document.querySelector("#chat-writer"),
+    sendBtn = document.querySelector('#send-message'),
+    boxMessage = document.querySelector('#box-message'),
+    d = document.querySelector('#d');
+    
+  const classRequest = 'chat__box chat__message--request',
+    classResponse = 'chat__box chat__message--response',
+    classMessage = 'chat__message';
+
+  sendBtn.addEventListener("click", () => {
+    let message = chatWriter.value;
+    d.textContent = message;
+  })
 }

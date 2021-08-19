@@ -289,14 +289,18 @@
       </div>
     </div>
     <div class="chat__body">
-      <div class="chat__messages">
-        <div class="chat__message chat__message--response">Hi :D</div>
-        <div class="chat__message chat__message--request">Hello :s</div>
+      <div class="chat__messages" id="box-message">
+        <div class="chat__box chat__message--response">
+           <span class="chat__message">Hi...</span>
+        </div>
+        <div class="chat__box chat__message--request">
+          <span class="chat__message" id="d">Hello ;D</span>
+        </div>
       </div>
     </div>
     <div class="chat__footer">
-      <input type="text" class="chat__writer" placeholder="Escribe aqui">
-      <button class="btn btn-primary">
+      <input type="text" id="chat-writer" class="chat__writer" placeholder="Escribe aquí">
+      <button class="chat__send btn btn-primary" id="send-message">
         <i class="isax isax-send-2"></i>Enviar
       </button>
     </div>
