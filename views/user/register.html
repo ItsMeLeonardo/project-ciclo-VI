@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== default styles and icons ========== -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/overall-styles.css" />
+    <link rel="stylesheet" href="../../styles/style-icon.css" />
+    <link rel="stylesheet" href="../../styles/swiper-bundle.min.css" />
+
+    <!-- ========== styles for view user ========== -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ========== styles only this page ========== -->
+    <link rel="stylesheet" href="styles/login-register.css" />
+    <title>Registrate en Isis</title>
+  </head>
+  <body>
+    <i class="isax isax-logout btn-icon form__btn-back"></i>
+    <!-- Content register -->
+    <section class="section form">
+      <div class="form__img">
+        <img src="assets/img/register-bg.webp" alt="Medic and Doctor" />
+        <div class="form__buttons">
+          <a href="" class="form__btn-action">Login</a>
+          <a href="" class="form__active form__btn-action" >Register</a>
+        </div>
+      </div>
+      <!-- form -->
+      <div class="form__content">
+        <h2 class="form__logo logo logo--gradient">Isis</h2>
+        <p class="form__phrase">Crea una Cuenta</p>
+        <!-- here init form :d -->
+        <form action="" class="form__container grid">
+          <!-- name -->
+          <div class="form__field form__field-valid">
+            <i class="isax isax-user form__icon"></i>
+            <input 
+              type="text" 
+              name="name"
+              id="name"
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="name" class="form__label">Nombres</label>
+            <i class="isax isax-user form__icon-alert"></i>
+            <span class="form__text-alert">change</span>
+          </div>
+          <!-- last name -->
+          <div class="form__field">
+            <i class="isax isax-user form__icon"></i>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="surname" class="form__label">apellidos</label>
+            <i class="isax isax-user form__icon-alert"></i>
+          </div>
+          <!-- user name -->
+          <div class="form__field">
+            <i class="isax isax-profile-2user form__icon"></i>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="username" class="form__label">Username</label>
+            <i class="isax isax-user form__icon-alert"></i>
+          </div>
+          <!-- Phone number -->
+          <div class="form__field">
+            <i class="isax isax-call form__icon"></i>
+            <input 
+              type="tel" 
+              name="phone"
+              id="phone"
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="phone" class="form__label">N° Teléfono</label>
+            <i class="isax isax-user form__icon-alert"></i>
+          </div>
+          <!-- DNI -->
+          <div class="form__field">
+            <i class="isax isax-document form__icon"></i>
+            <input 
+              type="text" 
+              name="dni" 
+              id="dni" 
+              class="form__input"
+              placeholder=" "
+              required 
+            />
+            <label for="dni" class="form__label">DNI</label>
+            <i class="isax isax-user form__icon-alert"></i>
+          </div>
+          <!--  Email -->
+          <div class="form__field">
+            <i class="isax isax-sms-edit form__icon"></i>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="email" class="form__label">Email</label>
+            <i class="isax isax-user form__icon-alert"></i>
+          </div>
+          <!-- password -->
+          <div class="form__field">
+            <i class="isax isax-lock form__icon"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="password" class="form__label">Contraseña</label>
+            <i class="isax isax-user form__icon-alert"></i>
+          </div>
+          <!-- terms and conditions -->
+          <label for="terms" class="form__field form__checkbox">
+            <input type="checkbox" id="terms" class="form__checkbox-input" required />
+            Acepto los términos y condiciones
+          </label>
+          <!-- button -->
+          <input
+            type="submit"
+            value="Registrarse"
+            class="form__button form__field"
+          />
+        </form>
+        <a class="form__login-link">
+          ¿ya tienes una cuenta?
+          <span class="form__link-span">Inicia aquí</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== Import scripts for animations ========== -->
+    <script src="js/form.js"></script>
+  </body>
+</html>
