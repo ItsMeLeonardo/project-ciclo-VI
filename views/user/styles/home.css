@@ -1,6 +1,3 @@
-body {
-  overflow-x: hidden;
-}
 /* ========== Hero ========== */
 .hero {
   background: var(--main-gradient);

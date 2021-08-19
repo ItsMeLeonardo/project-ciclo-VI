@@ -36,18 +36,26 @@ if (chatShow && chatClose) {
     chat.classList.remove("chat__visible");
   });
 
-  // writer in chat
+  /* ========== writer in chat ========== */
   const chatWriter = document.querySelector("#chat-writer"),
     sendBtn = document.querySelector('#send-message'),
-    boxMessage = document.querySelector('#box-message'),
-    d = document.querySelector('#d');
-    
-  const classRequest = 'chat__box chat__message--request',
-    classResponse = 'chat__box chat__message--response',
-    classMessage = 'chat__message';
+    chatBox = document.querySelector('#chat-box');
+  
+  //create elements view message
+  const boxMessage = document.createElement("LI"),
+    messageContent = document.createElement("SPAN");
+
+    boxMessage.setAttribute("class", "chat__box");
+    messageContent.setAttribute("class", "chat__message");
+
+    boxMessage.appendChild(messageContent);
 
   sendBtn.addEventListener("click", () => {
     let message = chatWriter.value;
-    d.textContent = message;
-  })
+    boxMessage.classList.add('chat__message--request');
+    messageContent.textContent = message;
+    chatWriter.value = '';
+
+    chatBox.appendChild(boxMessage);
+  });
 }

@@ -46,6 +46,9 @@
 html {
   font-family: var(--typography-font);
 }
+body {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
 }
