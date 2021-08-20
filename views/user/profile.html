@@ -21,12 +21,12 @@
     <!-- ========== navbar ========== -->
     <header class="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo logo logo--white">Icis</a>
+        <a href="home.html" class="nav__logo logo logo--white">Icis</a>
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list grid">
             <!-- items nav -->
             <li class="nav__item">
-              <a href="#" class="nav__link"
+              <a href="home.html" class="nav__link"
                 ><i class="isax isax-home nav__icon"></i>Principal</a
               >
             </li>
@@ -92,8 +92,15 @@
       <!-- form -->
       <div class="form__content">
         <div class="profile__info">
-          <form class="profile__picture">
-            <div class="profile__overlay">
+          <form class="profile__picture" enctype="multipart/form-data">
+            <div class="profile__overlay" id="profile-overlay">
+              <input 
+                type="file"
+                name="photo"
+                id="photo"
+                class="profile__input"
+                accept="image/*" 
+              />
               <i class="isax isax-user-octagon profile__icon"></i>
             </div>
           </form>
@@ -260,7 +267,11 @@
               required
             >
               <option value="default">Selecciona una opción</option>
-              <option value="SJM">San juan de Miraflores</option>
+              <option value="sjm">San juan de Miraflores</option>
+              <option value="vs">Villa el Salvador</option>
+              <option value="chr">Chorrillos</option>
+              <option value="vma">Villa Maria</option>
+              <option value="lrn">Lurín</option>
             </select>
             <label for="distric" class="form__label">Distríto</label>
           </div>

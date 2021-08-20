@@ -11,20 +11,27 @@ if (navToggle && navClose && navMenu) {
     navMenu.classList.remove("nav__visible");
   });
 }
-/* ========== recent products ========== */
+/* ========== carousel products ========== */
 const swiperContainer = document.querySelector(".swiper-container");
 if (swiperContainer) {  
-  let offerSwiper = new Swiper(".offer", {
-    cssMode: true,
+  let carousel = new Swiper(".carousel", {
     loop: true,
-    navigation: {
-      nextEl: ".offer__btn-next",
-      prevEl: ".offer__btn-prev",
-    },
+    spaceBetween: 28,
+    centeredSlides: true,
+    grabCursor: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      768:{
+        slidesPerView: 2,
+      },
+      1220:{
+        slidesPerView: 3,
+      }
+    },
+    keyboard: true,
   });
 }
 /* ========== Chat show ========== */

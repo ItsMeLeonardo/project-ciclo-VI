@@ -19,4 +19,20 @@ const formInput = document.querySelectorAll('.form__input');
     i.addEventListener('blur', () => {
       i.parentElement.classList.remove('form__field-valid');
     });
+});
+
+const profileOverlay = document.querySelector('#profile-overlay'),
+  photo = document.querySelector('#photo');
+if (profileOverlay) {
+  profileOverlay.addEventListener('click', () => {
+    photo.click();
   });
+
+  photo.addEventListener('change', ({target:{files}})=> {
+    const fileReader = new FileReader();
+    fileReader.readAsDataURL(files[0]);
+    fileReader.addEventListener('load', ({target:{result}}) => {
+      document.documentElement.style.setProperty('--url-profile',`url(${result})`);
+    });
+  });
+}
