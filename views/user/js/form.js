@@ -1,3 +1,5 @@
+
+
 /* ========== Create element of errors ========== */
 const iconError = document.createElement('I'),
   textError = document.createElement('SPAN');

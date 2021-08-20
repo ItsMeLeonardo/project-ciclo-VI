@@ -12,29 +12,33 @@ if (navToggle && navClose && navMenu) {
   });
 }
 /* ========== recent products ========== */
-let offerSwiper = new Swiper(".offer", {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: ".offer__btn-next",
-    prevEl: ".offer__btn-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+const swiperContainer = document.querySelector(".swiper-container");
+if (swiperContainer) {  
+  let offerSwiper = new Swiper(".offer", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".offer__btn-next",
+      prevEl: ".offer__btn-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
 /* ========== Chat show ========== */
 const chatShow = document.querySelector("#chat__show"),
   chatClose = document.querySelector("#chat__close"),
   chat = document.querySelector("#chat"),
   chatForm = document.querySelector("#chat__form");
 
+
+if (chatShow && chatClose) {
   chatForm.addEventListener("submit", (e) => {
     e.preventDefault();
   });
-
-if (chatShow && chatClose) {
+  
   chatShow.addEventListener("click", () => {
     chat.classList.toggle("chat__visible");
     document.body.classList.toggle("no-scroll");

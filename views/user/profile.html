@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== default styles and icons ========== -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/overall-styles.css" />
+    <link rel="stylesheet" href="../../styles/style-icon.css" />
+    <link rel="stylesheet" href="../../styles/swiper-bundle.min.css" />
+
+    <!-- ========== styles for view user ========== -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ========== styles only this page ========== -->
+    <link rel="stylesheet" href="styles/login-register.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
+    <title>Mi Perfil</title>
+  </head>
+  <body>
+      <!-- ========== navbar ========== -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo logo logo--white">Icis</a>
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list grid">
+            <!-- items nav -->
+            <li class="nav__item">
+              <a href="#" class="nav__link"><i class="isax isax-home nav__icon"></i>Principal</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="isax isax-shop nav__icon"></i>Productos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__bag">
+                Mi bolsa
+                <div class="nav__bag-content">
+                  <i class="isax isax-bag"></i>
+                  <!-- Items of shopping cart -->
+                  <span class="nav__bag-item">1</span>
+                </div>
+              </a>
+            </li>
+            <!-- searching -->
+            <li class="nav__item nav__search">
+              <div class="search">
+                <!-- <label class="search__label" for="search">Buscar</label> -->
+                <input type="text" name="search" id="search" class="search__input" placeholder="Buscar">
+                <i class="isax isax-search-favorite search__icon"></i>
+              </div>
+            </li>
+            <!-- ======== first view of users buttons of login ======== -->
+            <li class="nav__item">
+              <a href="register.html" class="nav__link btn btn-white">Registro</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html" class="nav__link btn btn-white-outline">Iniciar</a>
+            </li>
+            <!-- ======== this view,when the user starts a session ======== -->
+            <!-- <li class="nav__item">
+              <a href="#" class="nav__link btn btn-white">
+                <i class="isax isax-profile-circle nav__profile-icon"></i>
+                Mi Perfil
+              </a>
+            </li> -->
+          </ul>
+          <i class="isax isax-close-circle nav__close" id="nav__close"></i>
+        </div>
+        <div class="nav__btn">
+          <div class="nav__toggle" id="nav__toggle">
+            <i class="isax isax-arrow-circle-up"></i>
+          </div>
+        </div> 
+      </nav>    
+    </header>
+    <!--  ========== profile ==========  -->
+    <section class="section form profile">
+      <!-- form -->
+      <div class="form__content">
+        <div class="profile__info">
+          <form class="profile__picture" >
+            <div class="profile__overlay">
+              <i class="isax isax-user-octagon profile__icon"></i>
+            </div>
+          </form>
+          <div class="profile__data">
+            <div class="profile__name">Anna Smith</div>
+            <div class="profile__username">Anna 2020</div>
+          </div>
+        </div>
+        <!-- here init form :d -->
+        <form action="" class="form__container grid">
+          <!-- name -->
+          <div class="form__field">
+            <i class="isax isax-user form__icon"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form__input"
+              placeholder=" "
+              maxlength="45"
+              required
+            />
+            <label for="name" class="form__label">Nombres</label>
+            <!-- <i class="isax isax-information form__icon-alert"></i>
+            <span class="form__text-alert">change</span> -->
+          </div>
+          <!-- last name -->
+          <div class="form__field">
+            <i class="isax isax-user form__icon"></i>
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              class="form__input"
+              placeholder=" "
+              maxlength="45"
+              required
+            />
+            <label for="surname" class="form__label">Apellidos</label>
+          </div>
+          <!-- user name -->
+          <div class="form__field">
+            <i class="isax isax-profile-2user form__icon"></i>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="form__input"
+              placeholder=" "
+              maxlength="20"
+              required
+            />
+            <label for="username" class="form__label">Username</label>
+          </div>
+          <!-- Phone number -->
+          <div class="form__field">
+            <i class="isax isax-call form__icon"></i>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              class="form__input"
+              placeholder=" "
+              maxlength="20"
+              required
+            />
+            <label for="phone" class="form__label">N° Teléfono</label>
+          </div>
+          <!-- DNI -->
+          <div class="form__field">
+            <i class="isax isax-document form__icon"></i>
+            <input
+              type="text"
+              name="dni"
+              id="dni"
+              class="form__input"
+              placeholder=" "
+              maxlength="15"
+              minlength="8"
+              required
+            />
+            <label for="dni" class="form__label">DNI</label>
+          </div>
+          <!--  Email -->
+          <div class="form__field">
+            <i class="isax isax-sms-edit form__icon"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="email" class="form__label">Email</label>
+          </div>
+          <!-- password -->
+          <div class="form__field">
+            <i class="isax isax-lock form__icon"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form__input"
+              placeholder=" "
+              minlength="8"
+              required
+            />
+            <label for="password" class="form__label">Contraseña</label>
+          </div>
+          <!-- Department -->
+          <div class="form__field">
+            <i class="isax isax-security-safe form__icon"></i>
+            <input
+              type="text"
+              name="department"
+              id="department"
+              class="form__input"
+              placeholder=" "
+              disabled
+              value="Lima"
+            />
+            <label for="department" class="form__label">Departamento</label>
+          </div>
+          <!-- Province -->
+          <div class="form__field">
+            <i class="isax isax-security-safe form__icon"></i>
+            <input
+              type="text"
+              name="province"
+              id="province"
+              class="form__input"
+              placeholder=" "
+              disabled
+              value="Lima"
+            />
+            <label for="province" class="form__label">Província</label>
+          </div>
+          <!-- Address -->
+          <div class="form__field">
+            <i class="isax isax-global-edit form__icon"></i>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              class="form__input"
+              maxlength="255"
+              placeholder=" "
+            />
+            <label for="address" class="form__label">Dirección</label>
+          </div>
+          <!-- District -->
+          <div class="form__field">
+            <i class="isax isax-location form__icon"></i>
+            <select 
+              name="district"
+              id="district"
+              class="form__input"
+              placeholder=" "
+              required
+            >
+              <option value="default">Selecciona una opción</option>
+              <option value="SJM">San juan de Miraflores</option>
+            </select>
+            <label for="distric" class="form__label">District</label>
+          </div>
+          <!-- button save data  and logout-->
+            <!-- Logout -->
+          <a href="login.html" class="profile__logout">
+            <i class="isax isax-logout btn-icon"></i>
+            <span>Logout</span>
+          </a>
+            <!-- save -->
+          <input
+            type="submit"
+            value="Actualizar"
+            class="form__button form__field"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== Import scripts for animations ========== -->
+    <script src="js/form.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>
