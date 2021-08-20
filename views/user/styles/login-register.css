@@ -162,6 +162,12 @@
   z-index: 10;
   opacity: 1;
 }
+.form__select {
+  width: 100%;
+  margin-left: 1rem;
+  font-size: var(--description);
+  border: none;
+}
 /* ========== login ========== */
 .form__field--login {
   grid-column: span 2;
