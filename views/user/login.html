@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ========== default styles and icons ========== -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/overall-styles.css" />
+    <link rel="stylesheet" href="../../styles/style-icon.css" />
+    <link rel="stylesheet" href="../../styles/swiper-bundle.min.css" />
+
+    <!-- ========== styles for view user ========== -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ========== styles only this page ========== -->
+    <link rel="stylesheet" href="styles/login-register.css" />
+    <title>Register Icis</title>
+  </head>
+  <body>
+    <a href="home.html" class="isax isax-logout btn-icon form__btn-back"></a>
+    <!-- Content register -->
+    <section class="section form">
+      <div class="form__img">
+        <img src="assets/img/register-bg.webp" alt="Medic and Doctor" />
+        <div class="form__buttons">
+          <a href="#" class="form__active form__btn-action">Login</a>
+          <a href="register.html" class="form__btn-action" >Register</a>
+        </div>
+      </div>
+      <!-- form -->
+      <div class="form__content form__content--login">
+        <h2 class="form__logo logo logo--gradient">Icis</h2>
+        <p class="form__phrase">Entra con tu cuenta </p>
+        <!-- here init form :d -->
+        <form action="" class="form__container form__container--register grid">
+          <!--  Email -->
+          <div class="form__field form__field--login">
+            <i class="isax isax-sms-edit form__icon"></i>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              class="form__input"
+              placeholder=" "
+              required
+            />
+            <label for="email" class="form__label">Email</label>
+          </div>
+          <!-- password -->
+          <div class="form__field form__field--login">
+            <i class="isax isax-lock form__icon"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form__input"
+              placeholder=" "
+              minlength="8"
+              required
+            />
+            <label for="password" class="form__label">Contraseña</label>
+          </div>
+          <!-- button -->
+          <input
+            type="submit"
+            value="Iniciar Sesión"
+            class="form__button form__field"
+          />
+        </form>
+        <a href="register.html" class="form__login-link">
+          ¿Aun no tienes una cuenta?
+          <span class="form__link-span">Inicia aquí</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== Import scripts for animations ========== -->
+    <script src="js/form.js"></script>
+  </body>
+</html>

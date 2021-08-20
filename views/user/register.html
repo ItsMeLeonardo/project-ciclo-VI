@@ -17,24 +17,24 @@
     <title>Registrate en Isis</title>
   </head>
   <body>
-    <i class="isax isax-logout btn-icon form__btn-back"></i>
+    <a href="home.html" class="isax isax-logout btn-icon form__btn-back"></a>
     <!-- Content register -->
     <section class="section form">
       <div class="form__img">
         <img src="assets/img/register-bg.webp" alt="Medic and Doctor" />
         <div class="form__buttons">
-          <a href="" class="form__btn-action">Login</a>
-          <a href="" class="form__active form__btn-action" >Register</a>
+          <a href="login.html" class="form__btn-action">Login</a>
+          <a href="#" class="form__active form__btn-action" >Register</a>
         </div>
       </div>
       <!-- form -->
       <div class="form__content">
-        <h2 class="form__logo logo logo--gradient">Isis</h2>
+        <h2 class="form__logo logo logo--gradient">Icis</h2>
         <p class="form__phrase">Crea una Cuenta</p>
         <!-- here init form :d -->
         <form action="" class="form__container grid">
           <!-- name -->
-          <div class="form__field form__field-valid">
+          <div class="form__field">
             <i class="isax isax-user form__icon"></i>
             <input 
               type="text" 
@@ -42,10 +42,11 @@
               id="name"
               class="form__input"
               placeholder=" "
+              maxlength="45"
               required
             />
             <label for="name" class="form__label">Nombres</label>
-            <i class="isax isax-user form__icon-alert"></i>
+            <!-- <i class="isax isax-information form__icon-alert"></i> -->
             <span class="form__text-alert">change</span>
           </div>
           <!-- last name -->
@@ -57,10 +58,10 @@
               id="surname"
               class="form__input"
               placeholder=" "
+              maxlength="45"
               required
             />
-            <label for="surname" class="form__label">apellidos</label>
-            <i class="isax isax-user form__icon-alert"></i>
+            <label for="surname" class="form__label">Apellidos</label>
           </div>
           <!-- user name -->
           <div class="form__field">
@@ -71,10 +72,10 @@
               id="username"
               class="form__input"
               placeholder=" "
+              maxlength="20"
               required
             />
             <label for="username" class="form__label">Username</label>
-            <i class="isax isax-user form__icon-alert"></i>
           </div>
           <!-- Phone number -->
           <div class="form__field">
@@ -85,10 +86,10 @@
               id="phone"
               class="form__input"
               placeholder=" "
+              maxlength="20"
               required
             />
             <label for="phone" class="form__label">N° Teléfono</label>
-            <i class="isax isax-user form__icon-alert"></i>
           </div>
           <!-- DNI -->
           <div class="form__field">
@@ -99,10 +100,11 @@
               id="dni" 
               class="form__input"
               placeholder=" "
+              maxlength="15"
+              minlength="8"
               required 
             />
             <label for="dni" class="form__label">DNI</label>
-            <i class="isax isax-user form__icon-alert"></i>
           </div>
           <!--  Email -->
           <div class="form__field">
@@ -116,7 +118,6 @@
               required
             />
             <label for="email" class="form__label">Email</label>
-            <i class="isax isax-user form__icon-alert"></i>
           </div>
           <!-- password -->
           <div class="form__field">
@@ -127,10 +128,10 @@
               id="password"
               class="form__input"
               placeholder=" "
+              minlength="8"
               required
             />
             <label for="password" class="form__label">Contraseña</label>
-            <i class="isax isax-user form__icon-alert"></i>
           </div>
           <!-- terms and conditions -->
           <label for="terms" class="form__field form__checkbox">
@@ -144,7 +145,7 @@
             class="form__button form__field"
           />
         </form>
-        <a class="form__login-link">
+        <a href="login.html" class="form__login-link">
           ¿ya tienes una cuenta?
           <span class="form__link-span">Inicia aquí</span>
         </a>

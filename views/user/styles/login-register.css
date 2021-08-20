@@ -125,6 +125,7 @@
   color: var(--color-dark);
   font-size: var(--small-text);
   margin-top: 1rem;
+  cursor: pointer;  
 }
 .form__link-span {
   color: var(--color-primary);
@@ -161,7 +162,18 @@
   z-index: 10;
   opacity: 1;
 }
-
+/* ========== login ========== */
+.form__field--login {
+  grid-column: span 2;
+}
+.form__container--register {
+  grid-template-columns: repeat(1, minmax(156px, 32px));
+  grid-template-rows: repeat(3, 44px);
+  justify-content: space-evenly;
+}
+.form__content--login {	
+  justify-content: center;
+}
 /* ========== Media queries ========== */
 /* --- ipads and tablets --- */
 @media (min-width: 768px) {
@@ -203,7 +215,7 @@
     width: 15px;
     height: 100%;
     top: 0;
-    left: -100%;
+    left: -25%;
     transition: 1s ease-in-out;
   }
   .form__btn-action:hover::after {
