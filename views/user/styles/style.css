@@ -2,6 +2,7 @@
   --shadow-top: 0px -7px 31px rgba(0, 0, 0, 0.07), 0px -2.92443px 12.9511px rgba(0, 0, 0, 0.0488234), 0px -1.56354px 6.92426px rgba(0, 0, 0, 0.0407766);
   --shadow-bottom-orange: 0 1rem 2rem -.5rem var(--color-primary);
 }
+.no-scroll {overflow:hidden}
 /* ========== styles for all view user ========== */
 .section {
   padding: 1rem;
@@ -271,6 +272,7 @@
   height: 100%;
   padding: 1rem;
   margin: 0;
+  overflow-y: auto;
 }
 .chat__box {
   width: 100%;
@@ -324,7 +326,7 @@
 }
 /* --- ipad or tablets ---*/
 @media screen and (min-width: 768px) {
-
+  .no-scroll {overflow-y:auto}
   /* ---- navbar ----  */
   .header {
     top: 0;

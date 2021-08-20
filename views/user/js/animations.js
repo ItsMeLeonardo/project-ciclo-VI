@@ -27,13 +27,21 @@ let offerSwiper = new Swiper(".offer", {
 /* ========== Chat show ========== */
 const chatShow = document.querySelector("#chat__show"),
   chatClose = document.querySelector("#chat__close"),
-  chat = document.querySelector("#chat");
+  chat = document.querySelector("#chat"),
+  chatForm = document.querySelector("#chat__form");
+
+  chatForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+
 if (chatShow && chatClose) {
   chatShow.addEventListener("click", () => {
     chat.classList.toggle("chat__visible");
+    document.body.classList.toggle("no-scroll");
   });
   chatClose.addEventListener("click", () => {
     chat.classList.remove("chat__visible");
+    document.body.classList.remove("no-scroll");
   });
 
   /* ========== writer in chat ========== */
@@ -64,5 +72,6 @@ if (chatShow && chatClose) {
   
     chatBox.appendChild(drawChatMessage(message));
     chatWriter.value = '';
+    chatWriter.focus();
   });
 }
