@@ -137,7 +137,7 @@
   font-size: var(--small-text);
   padding: .5rem;
   border-radius: 30px;
-  box-shadow: 0 14px 1rem -13px var(--color-alert);
+  box-shadow: 0 14px 3.9rem -13px rgb(17 6 4);
   z-index: -1;
   opacity: 0;
   transition: 0.4s ease-in-out;

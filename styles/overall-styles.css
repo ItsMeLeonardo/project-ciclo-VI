@@ -98,3 +98,4 @@ button,input {
 .logo--white {
   color: var(--color-white);
 }
+.hidden {display: none !important;}
