@@ -96,7 +96,7 @@
             <i class="isax isax-bag-tick-2"></i>
             Mi bolsa
           </h2>
-          <h3 class="cart__total">total $<span id="total">250.00</span></h3>
+          <h3 class="cart__total">total $<span id="total">25.00</span></h3>
         </div>
         <div class="cart__content cart__shadow">
           <ul class="cart__header grid">
@@ -109,6 +109,7 @@
           <div class="cart__products">
             <!-- row of a product -->
             <ul class="cart__product grid">
+              <!-- photo -->
               <li class="cart__product-item">
                 <img
                   src="assets/img/cup-pills.webp"
@@ -116,135 +117,32 @@
                   class="cart__img"
                 />
               </li>
+              <!-- name -->
               <li class="cart__product-item">
                 <p class="cart__name">Name</p>
                 <div class="cart__description"></div>
               </li>
+              <!-- unit price -->
               <li class="cart__product-item">
                 $<span class="cart__price">25.00</span>
               </li>
-              <li class="cart__product-item">
-                <span class="cart__quantity-btn cart__up-btn" id="detail-up">
+              <!-- quantity -->
+              <li class="cart__product-item cart__quantity">
+                <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity" id="current-quantity">1</span>
-                <span
-                  class="cart__quantity-btn cart__down-btn"
-                  id="detail-down"
-                >
+                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
+                <span class="cart__quantity-btn cart__down-btn" >
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
+              <!-- subtotal -->
               <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
+                $<span class="cart__price cart__subtotal">25.00</span>
               </li>
+              <!-- remove -->
               <li class="cart__product-item">
                 <a href="#" class="isax isax-close-circle btn-icon"></a>
-              </li>
-            </ul>
-            <!-- row of a product -->
-            <ul class="cart__product grid">
-              <li class="cart__product-item">
-                <img
-                  src="assets/img/cup-pills.webp"
-                  alt="img"
-                  class="cart__img"
-                />
-              </li>
-              <li class="cart__product-item">
-                <p class="cart__name">Name</p>
-                <div class="cart__description"></div>
-              </li>
-              <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
-              </li>
-              <li class="cart__product-item">
-                <span class="cart__quantity-btn cart__up-btn" id="detail-up">
-                  <i class="isax isax-arrow-circle-up"></i>
-                </span>
-                <span class="cart__quantity" id="current-quantity">1</span>
-                <span
-                  class="cart__quantity-btn cart__down-btn"
-                  id="detail-down"
-                >
-                  <i class="isax isax-arrow-circle-down"></i>
-                </span>
-              </li>
-              <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
-              </li>
-              <li class="cart__product-item">
-                <i class="isax isax-close-circle btn-icon"></i>
-              </li>
-            </ul>
-            <!-- row of a product -->
-            <ul class="cart__product grid">
-              <li class="cart__product-item">
-                <img
-                  src="assets/img/cup-pills.webp"
-                  alt="img"
-                  class="cart__img"
-                />
-              </li>
-              <li class="cart__product-item">
-                <p class="cart__name">Name</p>
-                <div class="cart__description"></div>
-              </li>
-              <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
-              </li>
-              <li class="cart__product-item">
-                <span class="cart__quantity-btn cart__up-btn" id="detail-up">
-                  <i class="isax isax-arrow-circle-up"></i>
-                </span>
-                <span class="cart__quantity" id="current-quantity">1</span>
-                <span
-                  class="cart__quantity-btn cart__down-btn"
-                  id="detail-down"
-                >
-                  <i class="isax isax-arrow-circle-down"></i>
-                </span>
-              </li>
-              <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
-              </li>
-              <li class="cart__product-item">
-                <i class="isax isax-close-circle btn-icon"></i>
-              </li>
-            </ul>
-            <!-- row of a product -->
-            <ul class="cart__product grid">
-              <li class="cart__product-item">
-                <img
-                  src="assets/img/cup-pills.webp"
-                  alt="img"
-                  class="cart__img"
-                />
-              </li>
-              <li class="cart__product-item">
-                <p class="cart__name">Name</p>
-                <div class="cart__description"></div>
-              </li>
-              <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
-              </li>
-              <li class="cart__product-item">
-                <span class="cart__quantity-btn cart__up-btn" id="detail-up">
-                  <i class="isax isax-arrow-circle-up"></i>
-                </span>
-                <span class="cart__quantity" id="current-quantity">1</span>
-                <span
-                  class="cart__quantity-btn cart__down-btn"
-                  id="detail-down"
-                >
-                  <i class="isax isax-arrow-circle-down"></i>
-                </span>
-              </li>
-              <li class="cart__product-item">
-                $<span class="cart__price">25.00</span>
-              </li>
-              <li class="cart__product-item">
-                <i class="isax isax-close-circle btn-icon"></i>
               </li>
             </ul>
           </div>

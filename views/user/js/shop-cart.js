@@ -39,3 +39,51 @@ delivery.addEventListener('change', (e) => {
     btnPickOnSite.classList.add('hidden')
   }
 });
+
+/* ========== dynamic quantity subtotal ========== */
+const btnUp = document.querySelectorAll('.cart__up-btn'),
+  btnDown = document.querySelectorAll('.cart__down-btn'),
+  subtotal = document.querySelectorAll('.cart__subtotal'),
+  total = document.querySelector('#total');
+
+btnDown.forEach( i => {
+  i.addEventListener('click', () => {
+    const currentQuantity = i.previousElementSibling;
+    const quantity = Number(currentQuantity.textContent);
+    
+    const price = Number(currentQuantity.dataset.price);
+    if (quantity > 1) {
+      currentQuantity.textContent = quantity - 1;
+      calculateSubtotal(i, quantity - 1, price);
+      updateTotal();
+    } 
+  });
+});
+btnUp.forEach( j => {
+  const maxStock = j.nextElementSibling.dataset.stock;
+  
+  j.addEventListener('click', () => {
+    const currentQuantity = j.nextElementSibling;
+    const quantity = Number(currentQuantity.textContent);
+    const price = Number(currentQuantity.dataset.price);
+    if (quantity < maxStock) {      
+      currentQuantity.textContent = quantity + 1;
+      calculateSubtotal(j, quantity + 1, price);
+      updateTotal();
+    }
+  });
+});
+
+
+const calculateSubtotal = (element, quantity, price = 1) => {
+  const subtotal = element.parentElement.nextElementSibling.firstElementChild;
+  subtotal.textContent = price * quantity;
+}
+
+const updateTotal = () => {
+  let auxTotal = 0; 
+  subtotal.forEach( s => {
+    auxTotal += Number(s.textContent);
+  });
+  total.textContent = auxTotal;
+}
