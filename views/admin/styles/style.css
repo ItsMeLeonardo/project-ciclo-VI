@@ -1,5 +1,7 @@
 body {
   background-color: var(--color-light);
+  display: flex;
+  gap: 1rem;
 }
 .grid {
   display: grid;
@@ -10,12 +12,19 @@ body {
   background: var(--color-white);
   box-shadow: 0px 27px 121px rgba(41, 68, 142, 0.04), 0px 13.1756px 63.3334px rgba(41, 68, 142, 0.0287542), 0px 9.10525px 59.5646px rgba(41, 68, 142, 0.0238443), 0px 6.63028px 61.3532px rgba(41, 68, 142, 0.02), 0px 4.48382px 59.5819px rgba(41, 68, 142, 0.0161557), 0px 2.31385px 45.6639px rgba(41, 68, 142, 0.0112458);
 }
+.section {
+  padding: 1rem;
+}
+.page {
+  width: 100%;
+}
 /* ========== navbar ========== */
 .header {
-  width: 200px;
-  max-width: 200px;
-  position: relative;
+  width: 220px;
+  max-width: 220px;
+  position: fixed;
   transition: width 0.5s ease-in-out;
+  z-index: 10;
 }
 .nav {
   background: var(--color-light);
@@ -107,8 +116,10 @@ body {
 .nav__menu-active {
   display: block;
 }
-.header.nav__zipped {
+.nav__zipped {
   width: 80px;
+  position: sticky;
+  top: 0;
 }
 .nav__zipped-img {
   width: 60px;
@@ -119,4 +130,8 @@ body {
 /* ========== modal and buttons ========== */
 .btn-icon{
   font-size: var(--big-title);
+}
+
+@media screen and (min-width: 768px) {
+  .header {position: sticky; top: 0;}
 }

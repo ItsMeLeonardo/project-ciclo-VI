@@ -1,0 +1,52 @@
+.page__title {
+  font-weight: 700;
+}
+/* ========== Card summary ========== */
+.card {
+  grid-template-columns: repeat(auto-fit,
+  236px);
+  gap: 2rem;
+  padding-left: 0;
+} 
+.card__content {
+  border-radius: 16px;
+  color: var(--color-light);
+  min-height: 155px;
+  padding:0 0 1.5rem 1rem;
+  overflow: hidden;
+}
+.card__clients{
+  background: var(--gradient-card-purple);
+  box-shadow: 0 3rem 2rem -1.5rem rgba(110, 89, 248, 0.4);
+}
+.card__income{
+  background: var(--gradient-card-pink);
+  box-shadow: 0 3rem 2rem -1.5rem rgba(233, 111, 139, 0.4);
+}
+.card__sales{
+  background: var(--gradient-card-orange);
+  box-shadow: 0 3rem 2rem -1.5rem rgba(242, 109, 107, 0.4);
+}
+.card__picture {
+  width: 70%;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0px 16px 0px 75px;
+  position: relative;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+.card__content:hover .card__picture {
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card__icon {
+  font-size: 6rem;
+}
+.card__quantity {
+  font-size: var(--big-title);
+}
