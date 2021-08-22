@@ -1,153 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- ========== default styles and icons ========== -->
-  <link rel="stylesheet" href="../../styles/normalize.css">
-  <link rel="stylesheet" href="../../styles/style-icon.css">
-  <link rel="stylesheet" href="../../styles/overall-styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ========== styles for view admin ========== -->
-  <link rel="stylesheet" href="styles/style.css">
-  <!-- ========== styles only this page ========== -->
-  <link rel="stylesheet" href="styles/summary.css">
-  <title>Summary</title>
-</head>
-<body>
-  <!-- ========== navbar ========== -->
-  <header class="header container nav__zipped" id="header">
-    <span class="nav__toggle">
-      <i class="isax isax-row-vertical btn-icon nav__menu-active" id="unzipped-nav"></i>
-      <i class="isax isax-close-circle btn-icon " id="zipped-nav"></i>
-    </span>
-    <nav class="nav">
-      <h1 class="nav__logo logo logo--gradient">Icis</h1>
-      <div class="nav__profile">
-        <img src="assets/img/photo-admin.webp" alt="Name of admin" class="nav__img nav__zipped-img" id="user-image">
-        <p class="nav__user nav__zipped-user" id="user-name">Jhon Doe</p>
-      </div>
-      <ul class="nav__list grid">
-        <!-- summary -->
-        <li class="nav__item nav__item--active">
-          <a href="summary.html" class="nav__link">
-            <i class="isax isax-chart-square nav__icon"></i>
-            <span class="nav__link-text">
-              Resumen
-            </span>
-          </a>
-        </li>
-        <!-- Messages -->
-        <li class="nav__item">
-          <a href="message.html" class="nav__link">
-            <i class="isax isax-message-favorite nav__icon"></i>
-            <span class="nav__link-text">
-              Mensajes
-            </span>
-          </a>
-        </li>
-        <!-- Sales -->
-        <li class="nav__item">
-          <a href="sale.html" class="nav__link">
-            <i class="isax isax-money-send nav__icon"></i>
-            <span class="nav__link-text">
-              Ventas
-            </span>
-          </a>
-        </li>
-        <!-- Clients -->
-        <li class="nav__item">
-          <a href="client.html" class="nav__link">
-            <i class="isax isax-people nav__icon"></i>
-            <span class="nav__link-text">
-              Clientes
-            </span>
-          </a>
-        </li>
-        <!-- Employees -->
-        <li class="nav__item">
-          <a href="employee.html" class="nav__link">
-            <i class="isax isax-user-tag nav__icon"></i>
-            <span class="nav__link-text">
-              Empleados
-            </span>
-          </a>
-        </li>
-        <!-- Products -->
-        <li class="nav__item">
-          <a href="products.html" class="nav__link">
-            <i class="isax isax-element-4 nav__icon"></i>
-            <span class="nav__link-text">
-              Productos
-            </span>
-          </a>
-        </li>
-        <!-- Setting -->
-        <li class="nav__item">
-          <a href="setting.html" class="nav__link">
-            <i class="isax isax-setting-2 nav__icon"></i>
-            <span class="nav__link-text">
-              Perfil
-            </span>
-          </a>
-        </li>
-        <!-- logout -->
-        <li class="nav__item">
-          <a href="../user/login.html" class="nav__link">
-            <i class="isax isax-logout nav__icon"></i>
-            <span class="nav__link-text">
-              Salir
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ========== default styles and icons ========== -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/style-icon.css" />
+    <link rel="stylesheet" href="../../styles/overall-styles.css" />
 
-  <!-- ========== content ========== -->
-  <main class="page">
-    <!-- ========== cards summary ========== -->
-    <section class="section card grid">
+    <!-- ========== styles for view admin ========== -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ========== styles only this page ========== -->
+    <link rel="stylesheet" href="styles/summary.css" />
+    <title>Summary</title>
+  </head>
+  <body>
+    <!-- ========== navbar ========== -->
+    <header class="header container nav__zipped" id="header">
+      <span class="nav__toggle">
+        <i
+          class="isax isax-row-vertical btn-icon nav__menu-active"
+          id="unzipped-nav"
+        ></i>
+        <i class="isax isax-close-circle btn-icon" id="zipped-nav"></i>
+      </span>
+      <nav class="nav">
+        <h1 class="nav__logo logo logo--gradient">Icis</h1>
+        <div class="nav__profile">
+          <img
+            src="assets/img/photo-admin.webp"
+            alt="Name of admin"
+            class="nav__img nav__zipped-img"
+            id="user-image"
+          />
+          <p class="nav__user nav__zipped-user" id="user-name">Jhon Doe</p>
+        </div>
+        <ul class="nav__list grid">
+          <!-- summary -->
+          <li class="nav__item nav__item--active">
+            <a href="summary.html" class="nav__link">
+              <i class="isax isax-chart-square nav__icon"></i>
+              <span class="nav__link-text"> Resumen </span>
+            </a>
+          </li>
+          <!-- Messages -->
+          <li class="nav__item">
+            <a href="message.html" class="nav__link">
+              <i class="isax isax-message-favorite nav__icon"></i>
+              <span class="nav__link-text"> Mensajes </span>
+            </a>
+          </li>
+          <!-- Sales -->
+          <li class="nav__item">
+            <a href="sale.html" class="nav__link">
+              <i class="isax isax-money-send nav__icon"></i>
+              <span class="nav__link-text"> Ventas </span>
+            </a>
+          </li>
+          <!-- Clients -->
+          <li class="nav__item">
+            <a href="client.html" class="nav__link">
+              <i class="isax isax-people nav__icon"></i>
+              <span class="nav__link-text"> Clientes </span>
+            </a>
+          </li>
+          <!-- Employees -->
+          <li class="nav__item">
+            <a href="employee.html" class="nav__link">
+              <i class="isax isax-user-tag nav__icon"></i>
+              <span class="nav__link-text"> Empleados </span>
+            </a>
+          </li>
+          <!-- Products -->
+          <li class="nav__item">
+            <a href="products.html" class="nav__link">
+              <i class="isax isax-element-4 nav__icon"></i>
+              <span class="nav__link-text"> Productos </span>
+            </a>
+          </li>
+          <!-- Setting -->
+          <li class="nav__item">
+            <a href="setting.html" class="nav__link">
+              <i class="isax isax-setting-2 nav__icon"></i>
+              <span class="nav__link-text"> Perfil </span>
+            </a>
+          </li>
+          <!-- logout -->
+          <li class="nav__item">
+            <a href="../user/login.html" class="nav__link">
+              <i class="isax isax-logout nav__icon"></i>
+              <span class="nav__link-text"> Salir </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========== content ========== -->
+    <main class="page">
       <h1 class="page__title">Resumen</h1>
-      <div class="card__content card__clients">
-        <div class="card__picture">
-          <i class="isax isax-profile-2user card__icon"></i>
+      <div class="content grid">
+        <!-- ========== cards summary ========== -->
+        <div class="card__content card__clients">
+          <div class="card__picture">
+            <i class="isax isax-profile-2user card__icon"></i>
+          </div>
+          <p class="card__title">N° Clientes</p>
+          <h2 class="card__quantity">12</h2>
         </div>
-        <p class="card__title">N° Clientes</p>
-        <h2 class="card__quantity">12</h2>
-      </div>
-      <div class="card__content card__income">
-        <div class="card__picture">
-          <i class="isax isax-coin card__icon"></i>
+        <div class="card__content card__income">
+          <div class="card__picture">
+            <i class="isax isax-coin card__icon"></i>
+          </div>
+          <p class="card__title">Ingresos</p>
+          <h2 class="card__quantity">$<span id="total-income">1200</span></h2>
         </div>
-        <p class="card__title">Ingresos</p>
-        <h2 class="card__quantity">
-          $<span id="total-income">1200</span>
-        </h2>
-      </div>
-      <div class="card__content card__sales">
-        <div class="card__picture">
-          <i class="isax isax-card-send card__icon"></i>
+        <div class="card__content card__sales">
+          <div class="card__picture">
+            <i class="isax isax-card-send card__icon"></i>
+          </div>
+          <p class="card__title">N° Ventas</p>
+          <h2 class="card__quantity">12</h2>
         </div>
-        <p class="card__title">N° Ventas</p>
-        <h2 class="card__quantity">12</h2>
+
+        <!-- ========== Sales of week  ========== -->
+        <section class="container section sales">
+          <div class="section__title">
+            <span class="section__title-item"></span>
+            <h2 class="section__title-text">venta semanal</h2>
+          </div>
+          <div class="sales__chart">
+            <canvas height="580" width="340"></canvas>
+          </div>
+        </section>
+
+        <!-- ==========  resents clients  ========== -->
+        <section class="container section client">
+          <div class="section__title">
+            <span class="section__title-item"></span>
+            <h2 class="section__title-text">Nuevos clientes</h2>
+          </div>
+          <ul class="client__list">
+            <!-- init a list clients -->
+            <li class="client__item">
+              <div class="client__data">
+                <img src="assets/img/photo-user.webp" alt="client imagen" class="client__img">
+                <div class="client__info">
+                  <p class="client__name">Anna 2020</p>
+                  <span class="client__email">anna@gmail.com</span>
+                </div>
+              </div>
+              <span class="client__time">12:00pm</span>
+            </li>
+            <!-- init a list clients -->
+            <li class="client__item">
+              <div class="client__data">
+                <img src="assets/img/photo-user.webp" alt="client imagen" class="client__img">
+                <div class="client__info">
+                  <p class="client__name">Anna 2020</p>
+                  <span class="client__email">anna@gmail.com</span>
+                </div>
+              </div>
+              <span class="client__time">12:00pm</span>
+            </li>
+            <!-- init a list clients -->
+            <li class="client__item">
+              <div class="client__data">
+                <img src="assets/img/photo-user.webp" alt="client imagen" class="client__img">
+                <div class="client__info">
+                  <p class="client__name">Anna 2020</p>
+                  <span class="client__email">anna@gmail.com</span>
+                </div>
+              </div>
+              <span class="client__time">12:00pm</span>
+            </li>
+          </ul>
+        </section>
       </div>
-    </section>
+    </main>
 
-    <!-- ========== Sales of week  ========== -->
-    <section class=" container section sales">
-      
-    </section>
-
-    <!-- ==========  resents clients  ========== -->
-    <section class=" container section clients">
-
-    </section>
-  </main>
-
-  <!-- ========== zipped unzipped nav ========== -->
-  <script src="js/nav.js"></script>
-</body>
+    <!-- ========== zipped unzipped nav ========== -->
+    <script src="js/nav.js"></script>
+  </body>
 </html>

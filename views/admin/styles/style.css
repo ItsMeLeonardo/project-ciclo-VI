@@ -10,13 +10,35 @@ body {
 /* ========== containers ========== */
 .container { 
   background: var(--color-white);
-  box-shadow: 0px 27px 121px rgba(41, 68, 142, 0.04), 0px 13.1756px 63.3334px rgba(41, 68, 142, 0.0287542), 0px 9.10525px 59.5646px rgba(41, 68, 142, 0.0238443), 0px 6.63028px 61.3532px rgba(41, 68, 142, 0.02), 0px 4.48382px 59.5819px rgba(41, 68, 142, 0.0161557), 0px 2.31385px 45.6639px rgba(41, 68, 142, 0.0112458);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 59.8943px 43.7385px rgba(0, 0, 0, 0.0202191), 0px 47.6117px 30.6598px rgba(0, 0, 0, 0.0105608), 0px 39.5186px 22.4335px rgba(0, 0, 0, 0.0031587);
+  border-radius: 1rem;
 }
 .section {
   padding: 1rem;
 }
 .page {
   width: 100%;
+}
+.page__title {
+  padding-left: 2rem;
+  font-weight: 700;
+}
+.section__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section__title-text { 
+  font-weight: 500;
+  white-space: pre;
+}
+.section__title-item {
+  display: inline-block;
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 .25rem var(--color-primary-0-5);
 }
 /* ========== navbar ========== */
 .header {
@@ -133,5 +155,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .header {position: sticky; top: 0;}
+  body {
+    gap: 2rem;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    max-width: 220px;
+  }
+  .page {
+    padding: 1rem 0;
+  }
 }

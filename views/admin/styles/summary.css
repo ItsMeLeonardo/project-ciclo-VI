@@ -1,19 +1,20 @@
-.page__title {
-  font-weight: 700;
-}
-/* ========== Card summary ========== */
-.card {
-  grid-template-columns: repeat(auto-fit,
-  236px);
+/* ========== page layout ========== */
+.content {
+  margin-top: 1rem; 
+  grid-template-columns: repeat(auto-fit, minmax(236px, 290px));
   gap: 2rem;
-  padding-left: 0;
 } 
+/* ========== Card summary ========== */
 .card__content {
   border-radius: 16px;
   color: var(--color-light);
   min-height: 155px;
   padding:0 0 1.5rem 1rem;
   overflow: hidden;
+  transition: box-shadow .6s ease-in-out;
+}
+.card__content:hover {
+  box-shadow: none;
 }
 .card__clients{
   background: var(--gradient-card-purple);
@@ -49,4 +50,73 @@
 }
 .card__quantity {
   font-size: var(--big-title);
+}
+/* ========== Sales ========== */
+.sales {
+  overflow: hidden;
+}
+.sales__chart {
+  overflow: auto;
+}
+
+/* ========== resents clients ========== */
+.client__item,.client__data,.client__info {
+  display: flex;
+}
+.client__item {
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background .4s ease;
+}
+.client__item:hover {
+  background: var(--color-gray-0-2);
+}
+.client__img {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  filter: drop-shadow(0px 33px 75px rgba(0, 0, 0, 0.14)) drop-shadow(0px 10.4553px 16.7522px rgba(0, 0, 0, 0.083455)) drop-shadow(0px 4.90726px 4.98758px rgba(0, 0, 0, 0.056545));
+}
+.client__data {
+  gap: 0.5rem;
+}
+.client__info {
+  flex-flow: column;
+}
+.client__name {
+  font-size: var(--description);
+}
+.client__email,.client__time {
+  font-size: var(--small-text);
+  color: var(--color-gray);
+}
+.client__time {
+  align-self: end;
+}
+/* ========== Media queries ========== */
+/* tables and ipads */
+@media screen and (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(3, minmax(236px, 290px));
+    grid-template-rows: repeat(3, minmax(155px, 190px));
+    gap: 1rem;
+  }
+  .sales {
+    grid-column: span 2;
+  }
+  .sales, .client {
+    grid-row: span 2;
+  }
+}
+/* for mediun desktop */
+@media screen and (min-width: 1200px) {
+  .content {
+    grid-template-columns: repeat(4, minmax(236px, 290px));
+    grid-template-rows: repeat(3, minmax(155px, 180px));
+  }
+  .sales {
+    grid-column: span 3;
+  }
 }
