@@ -18,7 +18,7 @@
 </head>
 <body>
   <!-- ========== receipt ========== -->
-  <section class="receipt">
+  <section class="receipt" id="receipt">
     <div class="receipt__header">
       <span class="receipt__logo logo logo--white">Icis</span>
       <div class="receipt__data">
@@ -126,12 +126,16 @@
       <a href="home.html" id="download" class="btn btn-gradient">
         <i class="isax isax-home"></i>Volver
       </a>
-      <a href="#" class="btn btn-primary save__button">
+      <a download class="btn btn-primary save__button" id="save-button">
         <i class="isax isax-arrow-down"></i>Guardar
       </a>
     </div>
   </section>
+
+  <!-- ========== Script for screenShot ========== -->
+  <script src="js/html2canvas.min.js"></script>
   <script>
+    /* ========== Script for show modal :D ========== */
     const receipt = document.querySelector('.receipt'),
     modalSave = document.querySelector('.save__receipt');
     receipt.addEventListener('click', (e) => {
@@ -139,6 +143,14 @@
     })
     modalSave.addEventListener('click', (e) => {
       modalSave.classList.remove('is__visible');
+    });
+
+    /* ========== Code for download receipt ========== */
+    const saveButton = document.querySelector('#save-button');
+    html2canvas(document.body)
+      .then(canvas => {
+        const urlImage = canvas.toDataURL('image/*');
+        saveButton.setAttribute('href', urlImage);
     });
   </script>
 </body>
