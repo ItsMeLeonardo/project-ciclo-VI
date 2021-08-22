@@ -101,4 +101,7 @@ button,input {
 .logo--white {
   color: var(--color-white);
 }
-.hidden {display: none !important;}
+.hidden {
+  display: none !important;
+  transition: display .3s ease-in-out;
+}
