@@ -27,20 +27,13 @@
 .client__name-text {
   grid-column: 1 / span 2;
 }
-.mobil-hidden {
-  display: none; 
-} 
+
 /* ========== media queries ========== */
 /* tablet */
 @media screen and (min-width: 768px) {
-  .mobil-hidden {
-    display: initial;
-  }
+
   .client__header, .client__items {
     grid-template-columns: repeat(7, 1fr);
-  }
-  .tablet__hidden {
-    display: none;
   }
   .client__item-icon {
     display: flex;
@@ -59,7 +52,6 @@
     grid-template-columns: repeat(8, 1fr);
   }
   .tablet__hidden {
-    display: initial;
     font-size: var(--small-text);
   }
 }

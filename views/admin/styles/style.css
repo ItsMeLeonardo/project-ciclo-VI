@@ -29,6 +29,9 @@ body {
   padding: 0 0 1rem 2rem;
   font-weight: 700;
 }
+.section__header {
+  margin-bottom: 1rem;
+}
 .section__title {
   display: flex;
   align-items: center;
@@ -380,6 +383,13 @@ body {
 .search__input:focus + .search__icon {
   color: var(--color-primary);
 }
+
+.mobil-hidden {
+  display: none; 
+} 
+.tablet__hidden {
+  display: none;
+}
 /* ========== Media queries ========== */
 @media screen and (min-width: 768px) {
   body {
@@ -397,6 +407,9 @@ body {
   .modal__table {
     font-size: var(--normal-size);
   }
+  .mobil-hidden {
+    display: initial;
+  }
 
   /* ========== subtitle and search ========== */
   .section__header {
@@ -404,8 +417,16 @@ body {
     gap: 1rem;
   }
 }
+/* small desktop */
+@media screen and (min-width: 1024px) {
+  .tablet__hidden {
+    display: initial;
+  }
+}
+/* desktop */
 @media screen and (min-width: 1200px) {
   .main {
     width: 70vw;
   }
+  
 }

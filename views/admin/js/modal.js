@@ -1,16 +1,16 @@
 const btnCancel = document.querySelectorAll('.cancel-modal'),
-  btnAddProduct = document.querySelector('#add-product'),
-  btnEditProduct = document.querySelectorAll('.product__edit'),
-  btnRemoveProduct = document.querySelectorAll('.product__remove'),
+  btnAddEntity = document.querySelector('#add-entity'),
+  btnEditEntity = document.querySelectorAll('.edit-entity'),
+  btnRemoveProduct = document.querySelectorAll('.remove-entity'),
   modalForm = document.querySelector('#modal-form'),
   modalConfirm = document.querySelector('#modal-confirm');
 
 
 // show all modals
-btnAddProduct.addEventListener('click', () => {
+btnAddEntity.addEventListener('click', () => {
   modalForm.classList.remove('hidden');
 });
-btnEditProduct.forEach(btn => {
+btnEditEntity.forEach(btn => {
   btn.addEventListener('click', () => {
     modalForm.classList.remove('hidden');
   })
