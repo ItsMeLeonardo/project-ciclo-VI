@@ -18,6 +18,14 @@ transition: color 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
 }
+/* create */
+.audit__items-create, .audit__header-create {
+  grid-template-columns: repeat(9, 1fr);
+} 
+.product__audit {
+  grid-column: span 2;
+  align-self: start;
+}
 .audit__img-product {
   border-radius: 0.25rem;
 }
