@@ -188,7 +188,7 @@ body {
 .client__time {
   align-self: end;
 }
-/* ========== options of tabs ========== */
+/* ========== options or tabs ========== */
 .options {
   width: 100%;
   padding: 0.75rem;
@@ -203,6 +203,7 @@ body {
   color: var(--color-gray);
   cursor: pointer;
   transition: color 0.4s ease-in-out;
+  white-space: nowrap;
 }
 .option:hover {
   color: var(--color-primary);
@@ -212,6 +213,57 @@ body {
   font-weight: 500;
 }
 /* ========== modal and buttons ========== */
+/* modal */
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-dark-0-8);
+  backdrop-filter: blur(12px);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__content {
+  width: 100%;
+  height: 100%;
+  max-width: 576px;
+  max-height: 450px;
+  overflow: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--normal-size);
+  font-weight: 500;
+  color: var(--color-gray);
+}
+.modal__close {
+  color: var(--color-alert);
+  font-size: var(--small-title);
+  cursor: pointer;
+}
+.modal__table {
+  grid-template-columns: repeat(6, 1fr);
+  font-size: var(--small-text);
+  align-items: center;
+  justify-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.modal__img {
+  max-width: 42px;
+  border-radius: 4px;
+}
+.modal__table-item {
+  border-radius: .5rem;
+  background: var(--color-gray-0-2);
+}
 /* buttons */
 .btn-icon{
   font-size: var(--big-title);
@@ -287,5 +339,15 @@ body {
   }
   .page {
     padding: 1rem 0;
+  }
+  /* modal */
+  .modal__table {
+    font-size: var(--normal-size);
+  }
+
+/* ========== subtitle and search ========== */
+  .section__header {
+    display: flex;
+    gap: 1rem;
   }
 }

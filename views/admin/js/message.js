@@ -1,22 +1,22 @@
-const options = document.querySelectorAll('.option'),
-  clientItems = document.querySelectorAll('.client__item');
+// const options = document.querySelectorAll('.option'),
+//   itemsFilter = document.querySelectorAll('.filter-item');
 
-  options.forEach(option => {
-    option.addEventListener('click', () => {
-      // remove class active 
-      options.forEach(option => {
-        option.classList.remove('option--active');
-      });
-      // add class active
-      option.classList.add('option--active');
+//   options.forEach((option, i) => {
+//     option.addEventListener('click', () => {
+//       // remove class active 
+//       options.forEach(option => {
+//         option.classList.remove('option--active');
+//       });
+//       // add class active
+//       option.classList.add('option--active');
       
-      let dataFilter = option.getAttribute('data-filter');  
-      clientItems.forEach(clientItem => {
-        clientItem.classList.toggle('hidden');
-        if( (clientItem.getAttribute('data-tag') == dataFilter) || (dataFilter === 'all')) {
-          clientItem.classList.remove('hidden');
-        }
-      });
+//       let dataFilter = option.getAttribute('data-filter');  
+//       itemsFilter.forEach(item => {
+//         item.classList.add('hidden');
+//         if((item.getAttribute('data-tag') === dataFilter) || (dataFilter === 'all')) {
+//           item.classList.remove('hidden');
+//         }
+//       });
 
-    });
-  });
+//     });
+//   });

@@ -1,7 +1,7 @@
 .support__body {
   gap: 1rem;
 }
-.support__header {margin-bottom: 1rem;}
+.section__header {margin-bottom: 1rem;}
 /* ========== support data options ========== */
 .client__time {
   display: flex;
@@ -85,10 +85,6 @@
 @media screen and (min-width: 768px) {
   .support {
     width: 70vw;
-  }
-  .support__header {
-    display: flex;
-    gap: 1rem;
   }
   .support__body {
     grid-template-columns: 1fr;

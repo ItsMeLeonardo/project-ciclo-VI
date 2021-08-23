@@ -101,7 +101,7 @@
       <h1 class="page__title">Messages</h1>
       <section class="container section support">
         <!-- subtitle -->
-        <div class="support__header">
+        <div class="section__header">
           <div class="section__title">
             <span class="section__title-item"></span>
             <h2 class="section__title-text">Ayuda a clientes</h2>
@@ -122,16 +122,16 @@
           <!-- notify of messages -->
           <div class="support__data container">
             <div class="support__options options">
-              <p class="option option--active" id="all" data-filter="all">
+              <p class="option option-filter option--active" id="all" data-filter="all">
                 Todo <span class="tag-notify tag-notify--primary">8</span>
               </p>
-              <span class="option" id="medic" data-filter="medic">Médica</span>
-              <span class="option" id="tech" data-filter="tech">Técnica</span>
+              <span class="option option-filter" id="medic" data-filter="medic">Médica</span>
+              <span class="option option-filter" id="tech" data-filter="tech">Técnica</span>
             </div>
             <!-- list of user -->
             <ul class="client__list">
               <!-- init a list clients MEDIC -->
-              <li class="client__item" data-tag="medic">
+              <li class="client__item filter-item" data-tag="medic">
                 <div class="client__data">
                   <img
                     src="assets/img/photo-user.webp"
@@ -149,7 +149,7 @@
                 </div>
               </li>
               <!-- init a list clients TECH-->
-              <li class="client__item" data-tag="tech">
+              <li class="client__item filter-item" data-tag="tech">
                 <div class="client__data">
                   <img
                     src="assets/img/photo-user.webp"
@@ -214,6 +214,6 @@
     </main>
     <!-- ========== zipped unzipped nav ========== -->
     <script src="js/nav.js"></script>
-    <script src="js/message.js"></script>
+    <script src="js/filter.js"></script>
   </body>
 </html>
