@@ -3,12 +3,12 @@
 }
 .sale__btn {
   cursor: pointer;
-  transition: font-size 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   color: var(--color-alert);
   font-weight: 500;
 }
 .sale__btn:hover {
-  font-size: 18px;
+  color: var(--color-primary);
 }
 /* ========== header of table ========== */
 .sale__header, .sale__items {
