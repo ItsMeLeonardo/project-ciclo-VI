@@ -400,9 +400,12 @@
     order: -1;
   }  
   /* --- chat --- */
-  .chat {
+  .chat__visible {
     width: 400px;
     height: 500px;
+  }
+  .chat {
+    top: auto;
   }
 }
 @media screen and (min-width: 1440px) {
