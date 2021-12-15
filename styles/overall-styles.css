@@ -124,8 +124,7 @@ input {
 }
 
 .link {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.25rem;
   color: var(--color-primary);
   position: relative;
 }
@@ -135,7 +134,7 @@ input {
   position: absolute;
   content: "";
   width: var(--width);
-  height: 0.25rem;
+  height: 0.125rem;
   background: var(--color-primary);
   top: 2rem;
   left: calc(50% - var(--width) / 2);
