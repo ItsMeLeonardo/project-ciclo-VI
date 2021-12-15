@@ -106,6 +106,7 @@
             <span class="section__title-item"></span>
             <h2 class="section__title-text">Ayuda a clientes</h2>
           </div>
+          <!-- Search input -->
           <form action="hola" id="form" class="support__search search">
             <input
               type="search"
@@ -121,15 +122,23 @@
           </form>
         </div>
         <!-- body -->
-        <div class="support__body grid ">
+        <div class="support__body grid">
           <!-- notify of messages -->
           <div class="support__data container">
             <div class="support__options options">
-              <p class="option option-filter option--active" id="all" data-filter="all">
+              <p
+                class="option option-filter option--active"
+                id="all"
+                data-filter="all"
+              >
                 Todo <span class="tag-notify tag-notify--primary">8</span>
               </p>
-              <span class="option option-filter" id="medic" data-filter="medic">Médica</span>
-              <span class="option option-filter" id="tech" data-filter="tech">Técnica</span>
+              <span class="option option-filter" id="medic" data-filter="medic"
+                >Médica</span
+              >
+              <span class="option option-filter" id="tech" data-filter="tech"
+                >Técnica</span
+              >
             </div>
             <!-- list of user -->
             <ul class="client__list">
@@ -184,21 +193,35 @@
             <!-- chat -->
             <div class="chat__body">
               <ul class="chat__messages" id="chat-box">
-                <li class="chat__box chat__message--response" id="message-response">
+                <li
+                  class="chat__box chat__message--response"
+                  id="message-response"
+                >
                   <!-- user response img + time -->
                   <div class="client__info">
-                    <img src="assets/img/photo-user.webp" alt="" class="client__img">
+                    <img
+                      src="assets/img/photo-user.webp"
+                      alt=""
+                      class="client__img"
+                    />
                     <span class="client__time">12:00</span>
                   </div>
                   <!-- message -->
                   <span class="chat__message">Hi...</span>
                 </li>
-                <li class="chat__box chat__message--request" id="message-request">
-                  <!-- message -->                  
+                <li
+                  class="chat__box chat__message--request"
+                  id="message-request"
+                >
+                  <!-- message -->
                   <span class="chat__message">Hello ;D</span>
                   <!-- user response img + time -->
                   <div class="client__info">
-                    <img src="assets/img/photo-admin.webp" alt="" class="client__img">
+                    <img
+                      src="assets/img/photo-admin.webp"
+                      alt=""
+                      class="client__img"
+                    />
                     <span class="client__time">12:00</span>
                   </div>
                 </li>
@@ -206,7 +229,12 @@
             </div>
             <!-- send message -->
             <form class="chat__footer" id="chat__form">
-              <input type="text" id="chat-writer" class="chat__writer" placeholder="Escribe aquí">
+              <input
+                type="text"
+                id="chat-writer"
+                class="chat__writer"
+                placeholder="Escribe aquí"
+              />
               <button class="chat__send btn-primary" id="send-message">
                 <i class="isax isax-send-2"></i>Enviar
               </button>

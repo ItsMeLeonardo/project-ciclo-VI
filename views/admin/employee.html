@@ -117,16 +117,20 @@
           <span class="section__title-item"></span>
           <h2 class="section__title-text">Empleados</h2>
         </div>
-        <div class="employee__search search">
+        <!-- Search input -->
+        <form action="hola" id="form" class="support__search search">
           <input
             type="search"
             name="search-client"
             id="search-client"
             class="search__input"
-            placeholder="Buscar Empleado"
+            placeholder="Buscar cliente"
           />
-          <i class="isax isax-search-favorite search__icon"></i>
-        </div>
+          <button type="submit" class="search__button">
+            buscar
+            <i class="isax isax-search-favorite search__icon"></i>
+          </button>
+        </form>
       </div>
       <!-- table HEADER of receipts -->
       <div class="employee container">

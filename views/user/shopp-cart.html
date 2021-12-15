@@ -21,7 +21,7 @@
     <!-- ========== navbar ========== -->
     <header class="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo logo logo--white">Icis</a>
+        <a href="/" class="nav__logo logo logo--white">Icis</a>
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list grid">
             <!-- items nav -->
@@ -90,7 +90,7 @@
         </div>
       </nav>
     </header>
-    
+
     <!-- ========== Shop cart ========== -->
     <div class="shopp__cart">
       <!-- ========== table products ========== -->
@@ -135,8 +135,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -158,7 +163,7 @@
       </section>
 
       <!-- ========== form pay details ========== -->
-      <section class="section pay cart__shadow" id="pay-view">
+      <section class="section pay" id="pay-view">
         <span
           class="isax isax-logout btn-icon form__btn-back"
           id="close-form"
@@ -276,7 +281,8 @@
         <div class="form__content">
           <h2 class="form__phrase">Detalle de targeta</h2>
           <!------------ simulation card pay ------------>
-          <div class="form__container grid form__container-card"> <!-- Possible change for form -->
+          <div class="form__container grid form__container-card">
+            <!-- Possible change for form -->
             <!-- number card -->
             <div class="form__field pay__number-card">
               <i class="isax isax-card-pos form__icon"></i>
@@ -334,7 +340,12 @@
           </div>
         </div>
         <!------------ button alternate ------------>
-        <a href="#" class="form__button form__field shopp__btn-alternate hidden" id="btn-alternate">Obtener Recibo</a>
+        <a
+          href="receipt.html"
+          class="form__button form__field shopp__btn-alternate hidden"
+          id="btn-alternate"
+          >Obtener Recibo</a
+        >
 
         <!------------ init delivery ------------>
         <div class="form__content form__delivery">

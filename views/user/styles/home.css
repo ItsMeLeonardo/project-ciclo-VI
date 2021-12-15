@@ -106,6 +106,7 @@
   justify-content: space-evenly;
   flex-flow: wrap;
   gap: 3rem;
+  margin-bottom: 2rem;
 }
 .service__item {
   margin-top: 2rem;

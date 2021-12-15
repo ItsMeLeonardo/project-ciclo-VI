@@ -1,34 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap");
 
 :root {
   /* ========== colors ========== */
-  --color-primary: #FF7502;;
-  --color-primary-0-5: rgba(255,117,2,.25);
-  --color-secondary: #FFC852;
+  --color-primary: #ff7502;
+  --color-primary-0-5: rgba(255, 117, 2, 0.25);
+  --color-secondary: #ffc852;
   --color-dark: #110604;
   --color-dark-0-8: rgba(17, 6, 4, 0.08);
-  --color-green-dark: #20AB0B;
-  --color-light: #FBFBFB;
+  --color-green-dark: #20ab0b;
+  --color-light: #fbfbfb;
   --color-light-0-7: rgba(251, 251, 251, 0.8);
   --color-gray: #898995;
   --color-gray-0-2: rgba(137, 137, 149, 0.2);
   --color-white: #fff;
 
   /* Colors alerts */
-  --color-alert: #C01C28;
-  --color-success: #32F50F;
+  --color-alert: #c01c28;
+  --color-success: #32f50f;
   --color-success-0-5: rgba(50, 245, 15, 0.5);
 
   /* Gradients */
-  --main-gradient:  linear-gradient(102.67deg, #FFC852 -8.52%, #FF7502 104.15%);
-  --gradient-card-purple: linear-gradient(225deg, #A598FD 0%, #6955F7 100%);
-  --gradient-card-pink: linear-gradient(225deg, #F48EA6 0%, #E46281 100%);
-  --gradient-card-orange:linear-gradient(225deg, #FA9E9C 0%, #F16865 100%);
+  --main-gradient: linear-gradient(102.67deg, #ffc852 -8.52%, #ff7502 104.15%);
+  --gradient-card-purple: linear-gradient(225deg, #a598fd 0%, #6955f7 100%);
+  --gradient-card-pink: linear-gradient(225deg, #f48ea6 0%, #e46281 100%);
+  --gradient-card-orange: linear-gradient(225deg, #fa9e9c 0%, #f16865 100%);
 
   /* ========== Font  ========== */
   /* Font family */
-  --typography-font: 'Poppins', sans-serif;
-  --typography-logo: 'Philosopher', serif;
+  --typography-font: "Poppins", sans-serif;
+  --typography-logo: "Philosopher", serif;
 
   /* Font size */
   --big-title: 36px;
@@ -39,8 +39,11 @@
   --description: 14px;
   --small-text: 12px;
   --very-small: 6px;
-}  
-#__lpform_name,#__lpform_password {display: none}
+}
+#__lpform_name,
+#__lpform_password {
+  display: none;
+}
 * {
   box-sizing: border-box;
 }
@@ -59,26 +62,37 @@ li {
 ul {
   padding: 0;
 }
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   font-weight: 400;
 }
-button,input {
+button,
+input {
   border: none;
   outline: none;
   background: transparent;
 }
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background:var(--color-gray-0-2);
-  border-radius: .5rem;
+  background: var(--color-gray-0-2);
+  border-radius: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-gray);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 ::-webkit-scrollbar-thumb:hover {
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 .btn {
   font-size: var(--normal-size);
@@ -90,6 +104,8 @@ button,input {
   justify-content: center;
   align-items: center;
   background: var(--color-light);
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .logo {
   font-family: var(--typography-logo);
@@ -104,5 +120,27 @@ button,input {
 }
 .hidden {
   display: none !important;
-  transition: display .3s ease-in-out;
+  transition: display 0.3s ease-in-out;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  position: relative;
+}
+
+.link::after {
+  --width: 0%;
+  position: absolute;
+  content: "";
+  width: var(--width);
+  height: 0.25rem;
+  background: var(--color-primary);
+  top: 2rem;
+  left: calc(50% - var(--width) / 2);
+  transition: 0.3s ease-in-out;
+}
+.link:hover::after {
+  --width: 100%;
 }

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../../styles/normalize.css" />
     <link rel="stylesheet" href="../../styles/style-icon.css" />
     <link rel="stylesheet" href="../../styles/overall-styles.css" />
-    <link rel="stylesheet" href="../../styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../../styles/form.css">
+    <link rel="stylesheet" href="../../styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../styles/form.css" />
 
     <!-- ========== styles for view admin ========== -->
     <link rel="stylesheet" href="styles/style.css" />
@@ -100,7 +100,7 @@
       </nav>
     </header>
 
-  <!-- ========== content sale offline ========== -->
+    <!-- ========== content sale offline ========== -->
     <main class="page__sale-offline">
       <h1 class="page__title">Venta Presencial</h1>
       <section class="section container offline swiper-container carousel">
@@ -110,23 +110,31 @@
             <span class="section__title-item"></span>
             <h2 class="section__title-text">Productos</h2>
           </div>
-          <div class="sale__search search">
+          <!-- Search input -->
+          <form action="hola" id="form" class="support__search search">
             <input
               type="search"
               name="search-client"
               id="search-client"
               class="search__input"
-              placeholder="Buscar venta"
+              placeholder="Buscar cliente"
             />
-            <i class="isax isax-search-favorite search__icon"></i>
-          </div>
+            <button type="submit" class="search__button">
+              buscar
+              <i class="isax isax-search-favorite search__icon"></i>
+            </button>
+          </form>
         </div>
         <!-- products -->
         <div class="swiper-wrapper">
           <!-- init a product -->
           <div class="product__container swiper-slide">
             <div class="offline__img">
-              <img src="assets/img/bg-product.webp" alt="" class="product__img">
+              <img
+                src="assets/img/bg-product.webp"
+                alt=""
+                class="product__img"
+              />
             </div>
             <div class="offline-product__info">
               <p class="product__name">Nombre</p>
@@ -139,7 +147,11 @@
           <!-- init a product -->
           <div class="product__container swiper-slide">
             <div class="offline__img">
-              <img src="assets/img/bg-product.webp" alt="" class="product__img">
+              <img
+                src="assets/img/bg-product.webp"
+                alt=""
+                class="product__img"
+              />
             </div>
             <div class="offline-product__info">
               <p class="product__name">Nombre</p>
@@ -152,7 +164,11 @@
           <!-- init a product -->
           <div class="product__container swiper-slide">
             <div class="offline__img">
-              <img src="assets/img/bg-product.webp" alt="" class="product__img">
+              <img
+                src="assets/img/bg-product.webp"
+                alt=""
+                class="product__img"
+              />
             </div>
             <div class="offline-product__info">
               <p class="product__name">Nombre</p>
@@ -165,7 +181,11 @@
           <!-- init a product -->
           <div class="product__container swiper-slide">
             <div class="offline__img">
-              <img src="assets/img/bg-product.webp" alt="" class="product__img">
+              <img
+                src="assets/img/bg-product.webp"
+                alt=""
+                class="product__img"
+              />
             </div>
             <div class="offline-product__info">
               <p class="product__name">Nombre</p>
@@ -178,7 +198,11 @@
           <!-- init a product -->
           <div class="product__container swiper-slide">
             <div class="offline__img">
-              <img src="assets/img/bg-product.webp" alt="" class="product__img">
+              <img
+                src="assets/img/bg-product.webp"
+                alt=""
+                class="product__img"
+              />
             </div>
             <div class="offline-product__info">
               <p class="product__name">Nombre</p>
@@ -191,7 +215,6 @@
         </div>
         <div class="swiper-button-next offline__navigation"></div>
         <div class="swiper-button-prev offline__navigation"></div>
-
       </section>
       <!-- shopping cart -->
       <section class="section container offline-cart">
@@ -228,8 +251,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -266,8 +294,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -304,8 +337,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -342,8 +380,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -380,8 +423,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -418,8 +466,13 @@
                 <span class="cart__quantity-btn cart__up-btn">
                   <i class="isax isax-arrow-circle-up"></i>
                 </span>
-                <span class="cart__quantity current-quantity" data-price='25' data-stock="5">1</span>
-                <span class="cart__quantity-btn cart__down-btn" >
+                <span
+                  class="cart__quantity current-quantity"
+                  data-price="25"
+                  data-stock="5"
+                  >1</span
+                >
+                <span class="cart__quantity-btn cart__down-btn">
                   <i class="isax isax-arrow-circle-down"></i>
                 </span>
               </li>
@@ -445,7 +498,8 @@
               <input
                 type="text"
                 name="name"
-                id="name"class="form__input"
+                id="name"
+                class="form__input"
                 placeholder=" "
               />
               <label for="name" class="form__label">Nombre</label>
@@ -458,7 +512,11 @@
               />
               <label for="name" class="form__label">Nombre</label>
             </div> -->
-            <input type="submit" value="Pagar ahora" class="form__field btn btn-gradient">
+            <input
+              type="submit"
+              value="Pagar ahora"
+              class="form__field btn btn-gradient"
+            />
           </form>
         </div>
       </section>

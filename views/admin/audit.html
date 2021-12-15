@@ -109,42 +109,51 @@
             <span class="section__title-item"></span>
             <h2 class="section__title-text">Lista</h2>
           </div>
-          <div class="sale__search search">
+          <!-- Search input -->
+          <form action="hola" id="form" class="support__search search">
             <input
               type="search"
               name="search-client"
               id="search-client"
               class="search__input"
-              placeholder="Buscar venta"
+              placeholder="Buscar cliente"
             />
-            <i class="isax isax-search-favorite search__icon"></i>
-          </div>
+            <button type="submit" class="search__button">
+              buscar
+              <i class="isax isax-search-favorite search__icon"></i>
+            </button>
+          </form>
         </div>
         <!-- table HEADER of receipts -->
         <div class="sale container">
           <div class="sale__options options">
             <!-- update -->
-            <button class="option option-filter option--active" data-filter="update">Actualizado 
-              <span class="tag-notify tag-notify--primary">7</span> 
+            <button
+              class="option option-filter option--active"
+              data-filter="update"
+            >
+              Actualizado
+              <span class="tag-notify tag-notify--primary">7</span>
             </button>
             <!-- create -->
-            <button class="option option-filter" data-filter="create">Creado
+            <button class="option option-filter" data-filter="create">
+              Creado
               <span class="tag-notify tag-notify--primary">8</span>
             </button>
             <!-- delete -->
-            <button class="option option-filter" data-filter="delete">Eliminado
-              <span class="tag-notify tag-notify--primary">7</span> 
+            <button class="option option-filter" data-filter="delete">
+              Eliminado
+              <span class="tag-notify tag-notify--primary">7</span>
             </button>
             <a href="products.html" class="option sale__btn">
               <i class="isax isax-logout"></i> volver atras
             </a>
           </div>
-          
+
           <!-- table BODY of clients -->
           <div class="sale__body">
             <!--------- table update --------->
-            <div class="sale__delivery filter-item " data-tag="update">
-              
+            <div class="sale__delivery filter-item" data-tag="update">
               <!-- header of table -->
               <ul class="sale__header grid audit__header">
                 <li class="sale__header-text">Imagen</li>
@@ -157,13 +166,21 @@
                 <li class="sale__header-text">N Lab...</li>
                 <li class="sale__header-text">Autor</li>
               </ul>
-              
+
               <!-- init first  -->
               <ul class="sale__items audit__items grid table__update">
                 <!-- Photo -->
                 <li class="sale__item audit__info">
-                  <img src="../user/assets/img/dkt-profile-user.webp" alt="old image" class="client__img audit__img-product sale__label-icon">
-                  <img src="assets/img/bg-product.webp" alt="#" class="client__img audit__img-product">
+                  <img
+                    src="../user/assets/img/dkt-profile-user.webp"
+                    alt="old image"
+                    class="client__img audit__img-product sale__label-icon"
+                  />
+                  <img
+                    src="assets/img/bg-product.webp"
+                    alt="#"
+                    class="client__img audit__img-product"
+                  />
                 </li>
                 <!-- date -->
                 <li class="sale__item">
@@ -181,7 +198,9 @@
                 <!-- price -->
                 <li class="sale__item audit__info">
                   <span class="sale__label-icon">old price very large</span>
-                  <p class="sale__text">$ <span class="sale__text">25.00</span></p>
+                  <p class="sale__text">
+                    $ <span class="sale__text">25.00</span>
+                  </p>
                 </li>
                 <!-- category -->
                 <li class="sale__item audit__info">
@@ -202,12 +221,15 @@
                 <li class="sale__item audit__info">
                   <span class="sale__label-icon">admin ...</span>
                   <div class="sale__text audit__img-profile">
-                    <img src="assets/img/photo-user.webp" alt="#" class="client__img">
+                    <img
+                      src="assets/img/photo-user.webp"
+                      alt="#"
+                      class="client__img"
+                    />
                     Anna Doe
                   </div>
                 </li>
-                
-              </ul>  
+              </ul>
             </div>
 
             <!--------- table create --------->
@@ -227,7 +249,11 @@
               <ul class="sale__items audit__items-create grid">
                 <!-- Photo -->
                 <li class="sale__item">
-                  <img src="assets/img/bg-product.webp" alt="#" class="client__img audit__img-product">
+                  <img
+                    src="assets/img/bg-product.webp"
+                    alt="#"
+                    class="client__img audit__img-product"
+                  />
                 </li>
                 <!-- name product -->
                 <li class="sale__item">
@@ -261,11 +287,15 @@
                 <li class="sale__item audit__info">
                   <span class="sale__label-icon">admin ...</span>
                   <div class="sale__text audit__img-profile">
-                    <img src="assets/img/photo-user.webp" alt="#" class="client__img">
+                    <img
+                      src="assets/img/photo-user.webp"
+                      alt="#"
+                      class="client__img"
+                    />
                     Anna Doe
                   </div>
-                </li>               
-              </ul>  
+                </li>
+              </ul>
             </div>
 
             <!--------- table delete --------->
@@ -284,7 +314,11 @@
               <ul class="sale__items grid">
                 <!-- Photo -->
                 <li class="sale__item">
-                  <img src="assets/img/bg-product.webp" alt="#" class="client__img audit__img-product">
+                  <img
+                    src="assets/img/bg-product.webp"
+                    alt="#"
+                    class="client__img audit__img-product"
+                  />
                 </li>
                 <!-- name product -->
                 <li class="sale__item">
@@ -314,18 +348,21 @@
                 <li class="sale__item audit__info">
                   <span class="sale__label-icon">admin ...</span>
                   <div class="sale__text audit__img-profile">
-                    <img src="assets/img/photo-user.webp" alt="#" class="client__img">
+                    <img
+                      src="assets/img/photo-user.webp"
+                      alt="#"
+                      class="client__img"
+                    />
                     Anna Doe
                   </div>
-                </li>               
-              </ul> 
+                </li>
+              </ul>
             </div>
           </div>
-
         </div>
       </section>
     </main>
-    
+
     <!-- ========== zipped unzipped nav ========== -->
     <script src="js/nav.js"></script>
     <script src="js/filter.js"></script>

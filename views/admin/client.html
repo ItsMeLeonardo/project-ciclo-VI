@@ -1,198 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- ========== default styles and icons ========== -->
-  <link rel="stylesheet" href="../../styles/normalize.css">
-  <link rel="stylesheet" href="../../styles/style-icon.css">
-  <link rel="stylesheet" href="../../styles/overall-styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ========== styles for view admin ========== -->
-  <link rel="stylesheet" href="styles/style.css">
-  <!-- ========== styles only this page ========== -->
-  <link rel="stylesheet" href="styles/client.css">
-  <title>clientes</title>
-</head>
-<body>
-  <!-- ========== navbar ========== -->
-  <header class="header container nav__zipped" id="header">
-    <span class="nav__toggle">
-      <i class="isax isax-row-vertical btn-icon nav__menu-active" id="unzipped-nav"></i>
-      <i class="isax isax-close-circle btn-icon " id="zipped-nav"></i>
-    </span>
-    <nav class="nav">
-      <h1 class="nav__logo logo logo--gradient">Icis</h1>
-      <div class="nav__profile">
-        <img src="assets/img/photo-admin.webp" alt="Name of admin" class="nav__img nav__zipped-img" id="user-image">
-        <p class="nav__user nav__zipped-user" id="user-name">Jhon Doe</p>
-      </div>
-      <ul class="nav__list grid">
-        <!-- summary -->
-        <li class="nav__item">
-          <a href="summary.html" class="nav__link">
-            <i class="isax isax-chart-square nav__icon"></i>
-            <span class="nav__link-text">
-              Resumen
-            </span>
-          </a>
-        </li>
-        <!-- Messages -->
-        <li class="nav__item">
-          <a href="message.html" class="nav__link">
-            <i class="isax isax-message-favorite nav__icon"></i>
-            <span class="nav__link-text">
-              Mensajes
-            </span>
-          </a>
-        </li>
-        <!-- clients -->
-        <li class="nav__item">
-          <a href="sale.html" class="nav__link">
-            <i class="isax isax-money-send nav__icon"></i>
-            <span class="nav__link-text">
-              Ventas
-            </span>
-          </a>
-        </li>
-        <!-- Clients -->
-        <li class="nav__item nav__item--active">
-          <a href="client.html" class="nav__link">
-            <i class="isax isax-people nav__icon"></i>
-            <span class="nav__link-text">
-              Clientes
-            </span>
-          </a>
-        </li>
-        <!-- Employees -->
-        <li class="nav__item">
-          <a href="employee.html" class="nav__link">
-            <i class="isax isax-user-tag nav__icon"></i>
-            <span class="nav__link-text">
-              Empleados
-            </span>
-          </a>
-        </li>
-        <!-- Products -->
-        <li class="nav__item">
-          <a href="products.html" class="nav__link">
-            <i class="isax isax-element-4 nav__icon"></i>
-            <span class="nav__link-text">
-              Productos
-            </span>
-          </a>
-        </li>
-        <!-- Setting -->
-        <li class="nav__item">
-          <a href="setting.html" class="nav__link">
-            <i class="isax isax-setting-2 nav__icon"></i>
-            <span class="nav__link-text">
-              Perfil
-            </span>
-          </a>
-        </li>
-        <!-- logout -->
-        <li class="nav__item">
-          <a href="../user/login.html" class="nav__link">
-            <i class="isax isax-logout nav__icon"></i>
-            <span class="nav__link-text">
-              Salir
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ========== default styles and icons ========== -->
+    <link rel="stylesheet" href="../../styles/normalize.css" />
+    <link rel="stylesheet" href="../../styles/style-icon.css" />
+    <link rel="stylesheet" href="../../styles/overall-styles.css" />
 
-  <!-- ========== content clients ========== -->
-  <main class="page__client main">
-    <h1 class="page__title">Clientes</h1>
-    <section class="section container clients">
-      <!-- subtitle -->
-      <div class="section__header">
-        <div class="section__title">
-          <span class="section__title-item"></span>
-          <h2 class="section__title-text">Lista</h2>
-        </div>
-        <div class="client__search search">
-          <input
-            type="search"
-            name="search-client"
-            id="search-client"
-            class="search__input"
-            placeholder="Buscar venta"
+    <!-- ========== styles for view admin ========== -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- ========== styles only this page ========== -->
+    <link rel="stylesheet" href="styles/client.css" />
+    <title>clientes</title>
+  </head>
+  <body>
+    <!-- ========== navbar ========== -->
+    <header class="header container nav__zipped" id="header">
+      <span class="nav__toggle">
+        <i
+          class="isax isax-row-vertical btn-icon nav__menu-active"
+          id="unzipped-nav"
+        ></i>
+        <i class="isax isax-close-circle btn-icon" id="zipped-nav"></i>
+      </span>
+      <nav class="nav">
+        <h1 class="nav__logo logo logo--gradient">Icis</h1>
+        <div class="nav__profile">
+          <img
+            src="assets/img/photo-admin.webp"
+            alt="Name of admin"
+            class="nav__img nav__zipped-img"
+            id="user-image"
           />
-          <i class="isax isax-search-favorite search__icon"></i>
+          <p class="nav__user nav__zipped-user" id="user-name">Jhon Doe</p>
         </div>
-      </div>
-      <!-- table HEADER of receipts -->
-      <div class="client container">
-        <div class="client__options options">
-          <button class="option option-filter option--active" data-filter="delivery">Todos lo clientes
-            <span class="tag-notify tag-notify--primary">8</span>
-          </button>
+        <ul class="nav__list grid">
+          <!-- summary -->
+          <li class="nav__item">
+            <a href="summary.html" class="nav__link">
+              <i class="isax isax-chart-square nav__icon"></i>
+              <span class="nav__link-text"> Resumen </span>
+            </a>
+          </li>
+          <!-- Messages -->
+          <li class="nav__item">
+            <a href="message.html" class="nav__link">
+              <i class="isax isax-message-favorite nav__icon"></i>
+              <span class="nav__link-text"> Mensajes </span>
+            </a>
+          </li>
+          <!-- clients -->
+          <li class="nav__item">
+            <a href="sale.html" class="nav__link">
+              <i class="isax isax-money-send nav__icon"></i>
+              <span class="nav__link-text"> Ventas </span>
+            </a>
+          </li>
+          <!-- Clients -->
+          <li class="nav__item nav__item--active">
+            <a href="client.html" class="nav__link">
+              <i class="isax isax-people nav__icon"></i>
+              <span class="nav__link-text"> Clientes </span>
+            </a>
+          </li>
+          <!-- Employees -->
+          <li class="nav__item">
+            <a href="employee.html" class="nav__link">
+              <i class="isax isax-user-tag nav__icon"></i>
+              <span class="nav__link-text"> Empleados </span>
+            </a>
+          </li>
+          <!-- Products -->
+          <li class="nav__item">
+            <a href="products.html" class="nav__link">
+              <i class="isax isax-element-4 nav__icon"></i>
+              <span class="nav__link-text"> Productos </span>
+            </a>
+          </li>
+          <!-- Setting -->
+          <li class="nav__item">
+            <a href="setting.html" class="nav__link">
+              <i class="isax isax-setting-2 nav__icon"></i>
+              <span class="nav__link-text"> Perfil </span>
+            </a>
+          </li>
+          <!-- logout -->
+          <li class="nav__item">
+            <a href="../user/login.html" class="nav__link">
+              <i class="isax isax-logout nav__icon"></i>
+              <span class="nav__link-text"> Salir </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========== content clients ========== -->
+    <main class="page__client main">
+      <h1 class="page__title">Clientes</h1>
+      <section class="section container clients">
+        <!-- subtitle -->
+        <div class="section__header">
+          <div class="section__title">
+            <span class="section__title-item"></span>
+            <h2 class="section__title-text">Lista</h2>
+          </div>
+          <!-- Search input -->
+          <form action="hola" id="form" class="support__search search">
+            <input
+              type="search"
+              name="search-client"
+              id="search-client"
+              class="search__input"
+              placeholder="Buscar cliente"
+            />
+            <button type="submit" class="search__button">
+              buscar
+              <i class="isax isax-search-favorite search__icon"></i>
+            </button>
+          </form>
         </div>
-        
-        <!-- table BODY of clients -->
-        <div class="client__body">
-          <!--------- table clients --------->
-          <div class="client__delivery">
-            <!-- header of table -->  
-            <ul class="client__header grid">
-              <li class="client__header-text client__name-text">Nombre</li>
-              <li class="client__header-text">DNI</li>
-              <li class="client__header-text mobil-hidden">Username</li>
-              <li class="client__header-text">Email</li>
-              <li class="client__header-text mobil-hidden tablet__hidden">Tel</li>
-              <li class="client__header-text">Distrito</li>
-              <li class="client__header-text mobil-hidden">N°Compras</li>
-            </ul>
-            <!-- init first row of clients -->
-            <ul class="client__items grid">
-              <!-- Photo -->
-              <li class="client__item">
-                <img src="assets/img/photo-user.webp" alt="#" class="client__img">
-              </li>
-              <!-- name -->
-              <li class="client__item">
-                <p class="client__text">Anna Smith</p>
-              </li>
-              <!-- DNI -->
-              <li class="client__item">
-                <p class="client__text">12345678</p>
-              </li>
-              <!-- username -->
-              <li class="client__item mobil-hidden">
-                <p class="client__text">Anna 2020</p>
-              </li>
-              <!-- Email -->
-              <li class="client__item">
-                <p class="client__text">ana@gmail.com</p>
-              </li>
-              <!-- Phone -->
-              <li class="client__item mobil-hidden tablet__hidden">
-                <p class="client__text">(+51) 123456789</p>
-              </li>
-              <!-- district -->
-              <li class="client__item">
-                Lima
-              </li>
-              <!-- number sales-->
-              <li class="client__item client__item-icon mobil-hidden">
-                <i class="isax isax-bag-2 client__icon"></i>
-                <span class="client__sales">5</span>
-              </li>
-            </ul>  
+        <!-- table HEADER of receipts -->
+        <div class="client container">
+          <div class="client__options options">
+            <button
+              class="option option-filter option--active"
+              data-filter="delivery"
+            >
+              Todos lo clientes
+              <span class="tag-notify tag-notify--primary">8</span>
+            </button>
+          </div>
+
+          <!-- table BODY of clients -->
+          <div class="client__body">
+            <!--------- table clients --------->
+            <div class="client__delivery">
+              <!-- header of table -->
+              <ul class="client__header grid">
+                <li class="client__header-text client__name-text">Nombre</li>
+                <li class="client__header-text">DNI</li>
+                <li class="client__header-text mobil-hidden">Username</li>
+                <li class="client__header-text">Email</li>
+                <li class="client__header-text mobil-hidden tablet__hidden">
+                  Tel
+                </li>
+                <li class="client__header-text">Distrito</li>
+                <li class="client__header-text mobil-hidden">N°Compras</li>
+              </ul>
+              <!-- init first row of clients -->
+              <ul class="client__items grid">
+                <!-- Photo -->
+                <li class="client__item">
+                  <img
+                    src="assets/img/photo-user.webp"
+                    alt="#"
+                    class="client__img"
+                  />
+                </li>
+                <!-- name -->
+                <li class="client__item">
+                  <p class="client__text">Anna Smith</p>
+                </li>
+                <!-- DNI -->
+                <li class="client__item">
+                  <p class="client__text">12345678</p>
+                </li>
+                <!-- username -->
+                <li class="client__item mobil-hidden">
+                  <p class="client__text">Anna 2020</p>
+                </li>
+                <!-- Email -->
+                <li class="client__item">
+                  <p class="client__text">ana@gmail.com</p>
+                </li>
+                <!-- Phone -->
+                <li class="client__item mobil-hidden tablet__hidden">
+                  <p class="client__text">(+51) 123456789</p>
+                </li>
+                <!-- district -->
+                <li class="client__item">Lima</li>
+                <!-- number sales-->
+                <li class="client__item client__item-icon mobil-hidden">
+                  <i class="isax isax-bag-2 client__icon"></i>
+                  <span class="client__sales">5</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+      </section>
+    </main>
 
-      </div>
-    </section>
-  </main>
-
-  <!-- ========== zipped unzipped nav ========== -->
-  <script src="js/nav.js"></script>
-</body>
+    <!-- ========== zipped unzipped nav ========== -->
+    <script src="js/nav.js"></script>
+  </body>
 </html>
